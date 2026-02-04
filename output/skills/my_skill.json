@@ -1,0 +1,148 @@
+{
+  "name": "my_skill",
+  "description": "My custom skill",
+  "version": "1.0",
+  "parameters": [
+    {
+      "name": "text_input_1",
+      "description": "Text to input (original: 'Juan')",
+      "param_type": "text",
+      "default_value": "Juan",
+      "required": true
+    },
+    {
+      "name": "text_input_2",
+      "description": "Text to input (original: 'Li')",
+      "param_type": "text",
+      "default_value": "Li",
+      "required": true
+    },
+    {
+      "name": "text_input_3",
+      "description": "Text to input (original: '+17029760598')",
+      "param_type": "text",
+      "default_value": "+17029760598",
+      "required": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "StartAppEvent",
+      "action_type": "start_app",
+      "description": "Start app com.google.android.contacts",
+      "package": "com.google.android.contacts",
+      "activity": "com.android.contacts.activities.PeopleActivity"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 22: 'Create contact' (ImageButton) at coordinates (943, 2011)",
+      "x": 943,
+      "y": 2011,
+      "element_index": 22,
+      "element_text": "Create contact",
+      "element_bounds": "870,1938,1017,2085"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 11: 'First name' (EditText) at coordinates (535, 877)",
+      "x": 535,
+      "y": 877,
+      "element_index": 11,
+      "element_text": "First name",
+      "element_bounds": "137,803,933,952"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 11: 'First name' (EditText) at coordinates (535, 877)",
+      "x": 535,
+      "y": 877,
+      "element_index": 11,
+      "element_text": "First name",
+      "element_bounds": "137,803,933,952"
+    },
+    {
+      "type": "InputTextActionEvent",
+      "action_type": "input_text",
+      "description": "Input text: 'Juan' (clear=False)",
+      "text": "{{text_input_1}}"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 12: 'Last name' (EditText) at coordinates (535, 1062)",
+      "x": 535,
+      "y": 1062,
+      "element_index": 12,
+      "element_text": "Last name",
+      "element_bounds": "137,988,933,1137"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 12: 'Last name' (EditText) at coordinates (535, 1062)",
+      "x": 535,
+      "y": 1062,
+      "element_index": 12,
+      "element_text": "Last name",
+      "element_bounds": "137,988,933,1137"
+    },
+    {
+      "type": "InputTextActionEvent",
+      "action_type": "input_text",
+      "description": "Input text: 'Li' (clear=False)",
+      "text": "{{text_input_2}}"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 16: 'Phone' (EditText) at coordinates (535, 1474)",
+      "x": 535,
+      "y": 1474,
+      "element_index": 16,
+      "element_text": "Phone",
+      "element_bounds": "137,1400,933,1549"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 16: 'Phone' (EditText) at coordinates (535, 1474)",
+      "x": 535,
+      "y": 1474,
+      "element_index": 16,
+      "element_text": "Phone",
+      "element_bounds": "137,1400,933,1549"
+    },
+    {
+      "type": "InputTextActionEvent",
+      "action_type": "input_text",
+      "description": "Input text: '+17029760598' (clear=False)",
+      "text": "{{text_input_3}}"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 5: 'Save' (Button) at coordinates (838, 211)",
+      "x": 838,
+      "y": 211,
+      "element_index": 5,
+      "element_text": "Save",
+      "element_bounds": "723,148,954,274"
+    }
+  ],
+  "metadata": {
+    "source_trajectory": "output/trajectories/20260204_193903_18e1ab05",
+    "total_actions": 12,
+    "tags": [
+      "automation",
+      "test"
+    ],
+    "action_stats": {
+      "start_app": 1,
+      "tap": 8,
+      "input_text": 3
+    }
+  }
+}
