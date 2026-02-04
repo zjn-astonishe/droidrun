@@ -151,7 +151,7 @@ class LoggingConfig:
 
     debug: bool = False
     save_trajectory: str = "none"
-    trajectory_path: str = "trajectories"
+    trajectory_path: str = "output/trajectories"
     rich_text: bool = False
     trajectory_gifs: bool = True
 
@@ -201,45 +201,52 @@ class DroidrunConfig:
         """Get default agent specific LLM profiles."""
         return {
             "manager": LLMProfile(
-                provider="GoogleGenAI",
-                model="gemini-2.5-pro",
+                provider="OpenAI",
+                model="gpt-4o",
                 temperature=0.2,
+                api_base="https://api.zhizengzeng.com/v1/chat/completions",
                 kwargs={},
             ),
             "executor": LLMProfile(
-                provider="GoogleGenAI",
-                model="gemini-2.5-pro",
+                provider="OpenAI",
+                model="gpt-4o",
                 temperature=0.1,
+                api_base="https://api.zhizengzeng.com/v1/chat/completions",
                 kwargs={},
             ),
             "codeact": LLMProfile(
-                provider="GoogleGenAI",
-                model="gemini-2.5-pro",
+                provider="OpenAI",
+                model="gpt-4o",
                 temperature=0.2,
+                api_base="https://api.zhizengzeng.com/v1/chat/completions",
                 kwargs={},
             ),
             "text_manipulator": LLMProfile(
-                provider="GoogleGenAI",
-                model="gemini-2.5-pro",
+                provider="OpenAI",
+                model="gpt-4o",
                 temperature=0.3,
+                api_base="https://api.zhizengzeng.com/v1/chat/completions",
                 kwargs={},
             ),
             "app_opener": LLMProfile(
-                provider="GoogleGenAI",
-                model="gemini-2.5-pro",
+                provider="OpenAI",
+                model="gpt-4o",
                 temperature=0.0,
+                api_base="https://api.zhizengzeng.com/v1/chat/completions",
                 kwargs={},
             ),
             "scripter": LLMProfile(
-                provider="GoogleGenAI",
-                model="gemini-2.5-flash",
+                provider="OpenAI",
+                model="gpt-4o-mini",
                 temperature=0.1,
+                api_base="https://api.zhizengzeng.com/v1/chat/completions",
                 kwargs={},
             ),
             "structured_output": LLMProfile(
-                provider="GoogleGenAI",
-                model="gemini-2.5-flash",
+                provider="OpenAI",
+                model="gpt-4o-mini",
                 temperature=0.0,
+                api_base="https://api.zhizengzeng.com/v1/chat/completions",
                 kwargs={},
             ),
         }

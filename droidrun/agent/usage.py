@@ -34,16 +34,31 @@ def get_usage_from_response(provider: str, chat_rsp: ChatResponse) -> UsageResul
         raise ValueError("No raw response in chat response")
 
     if provider == "Gemini" or provider == "GoogleGenAI" or provider == "GenAI":
+        usage_metadata = rsp.get("usage_metadata")
+        if not usage_metadata:
+            return UsageResult(
+                request_tokens=0,
+                response_tokens=0,
+                total_tokens=0,
+                requests=1,
+            )
         return UsageResult(
-            request_tokens=rsp["usage_metadata"]["prompt_token_count"],
-            response_tokens=rsp["usage_metadata"]["candidates_token_count"],
-            total_tokens=rsp["usage_metadata"]["total_token_count"],
+            request_tokens=usage_metadata.get("prompt_token_count", 0),
+            response_tokens=usage_metadata.get("candidates_token_count", 0),
+            total_tokens=usage_metadata.get("total_token_count", 0),
             requests=1,
         )
     elif provider == "OpenAI" or provider == "OpenAILike" or provider == "openai_llm":
         from openai.types import CompletionUsage as OpenAIUsage
 
         usage: OpenAIUsage = rsp.usage
+        if not usage:
+            return UsageResult(
+                request_tokens=0,
+                response_tokens=0,
+                total_tokens=0,
+                requests=1,
+            )
         return UsageResult(
             request_tokens=usage.prompt_tokens,
             response_tokens=usage.completion_tokens,
@@ -53,7 +68,14 @@ def get_usage_from_response(provider: str, chat_rsp: ChatResponse) -> UsageResul
     elif provider == "Anthropic_LLM":
         from anthropic.types import Usage as AnthropicUsage
 
-        usage: AnthropicUsage = rsp["usage"]
+        usage: AnthropicUsage = rsp.get("usage")
+        if not usage:
+            return UsageResult(
+                request_tokens=0,
+                response_tokens=0,
+                total_tokens=0,
+                requests=1,
+            )
         return UsageResult(
             request_tokens=usage.input_tokens,
             response_tokens=usage.output_tokens,
@@ -74,11 +96,16 @@ def get_usage_from_response(provider: str, chat_rsp: ChatResponse) -> UsageResul
         # DeepSeek follows OpenAI-compatible format
         usage = rsp.usage
         if not usage:
-            usage = {}
+            return UsageResult(
+                request_tokens=0,
+                response_tokens=0,
+                total_tokens=0,
+                requests=1,
+            )
         return UsageResult(
-            request_tokens=usage.prompt_tokens or 0,
-            response_tokens=usage.completion_tokens or 0,
-            total_tokens=usage.total_tokens or 0,
+            request_tokens=getattr(usage, "prompt_tokens", 0) or 0,
+            response_tokens=getattr(usage, "completion_tokens", 0) or 0,
+            total_tokens=getattr(usage, "total_tokens", 0) or 0,
             requests=1,
         )
 

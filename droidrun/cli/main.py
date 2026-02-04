@@ -545,6 +545,12 @@ async def _setup_portal(
                 f"[bold red]Error:[/] Could not get device object for {device}"
             )
             return
+        
+        # Check for local portal.apk first
+        local_apk_path = "portal.apk"
+        if not path and os.path.exists(local_apk_path):
+            console.print(f"[green]Found local Portal APK: {local_apk_path}")
+            path = local_apk_path
 
         if path:
             console.print(f"[bold blue]Using provided APK:[/] {path}")
@@ -630,6 +636,9 @@ async def _setup_portal(
                 console.print(
                     "\n[bold green]APK installation complete![/] Please manually enable the accessibility service using the steps above."
                 )
+
+        await device_obj.shell("input keyevent KEYCODE_HOME")
+        await asyncio.sleep(1.0)
 
     except Exception as e:
         console.print(f"[bold red]Error:[/] {e}")

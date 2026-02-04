@@ -237,7 +237,7 @@ async def _show_dry_run(
 
 
 @macro_cli.command()
-@click.argument("directory", type=click.Path(exists=True), default="trajectories")
+@click.argument("directory", type=click.Path(exists=True), default="output/trajectories")
 @click.option("--debug", is_flag=True, help="Enable debug logging", default=False)
 def list(directory: str, debug: bool):
     """List available trajectory folders in a directory."""

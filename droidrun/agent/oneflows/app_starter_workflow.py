@@ -11,6 +11,7 @@ logger = logging.getLogger("droidrun")
 from workflows.events import StartEvent, StopEvent
 
 from droidrun.agent.utils.inference import acomplete_with_retries
+from droidrun.config.app_name import get_package_name
 from droidrun.tools import Tools
 
 
@@ -53,19 +54,27 @@ class AppStarter(Workflow):
         """
         app_description = ev.app_description
 
-        # Get list of installed apps
-        apps = await self.tools.get_apps(include_system=True)
+        # First, try to get package name from config
+        package_name = get_package_name(app_description)
+        
+        if package_name:
+            logger.info(f"Found app '{app_description}' in config: {package_name}")
+        else:
+            logger.info(f"App '{app_description}' not found in config, using LLM fallback")
+            
+            # Get list of installed apps
+            apps = await self.tools.get_apps(include_system=True)
 
-        # Format apps list for LLM
-        apps_list = "\n".join(
-            [
-                f"- {app['label']} (package: {app['package_name'] if 'package_name' in app else app['package']})"
-                for app in apps
-            ]
-        )
+            # Format apps list for LLM
+            apps_list = "\n".join(
+                [
+                    f"- {app['label']} (package: {app['package_name'] if 'package_name' in app else app['package']})"
+                    for app in apps
+                ]
+            )
 
-        # Construct prompt for LLM
-        prompt = f"""Given the following list of installed apps and a user's description, determine which app package name to open.
+            # Construct prompt for LLM
+            prompt = f"""Given the following list of installed apps and a user's description, determine which app package name to open.
 
 Installed Apps:
 {apps_list}
@@ -79,22 +88,22 @@ Return ONLY a JSON object with the following structure:
 
 Choose the most appropriate app based on the description. Return the package name of the best match."""
 
-        # Get LLM response
-        logger.info("📱 AppOpener response:", extra={"color": "blue"})
-        response = await acomplete_with_retries(self.llm, prompt, stream=self.stream)
-        response_text = response.text.strip()
+            # Get LLM response
+            logger.info("📱 AppOpener response:", extra={"color": "blue"})
+            response = await acomplete_with_retries(self.llm, prompt, stream=self.stream)
+            response_text = response.text.strip()
 
-        # Parse JSON response - extract content between { and }
-        try:
-            start = response_text.find("{")
-            end = response_text.rfind("}") + 1
-            json_str = response_text[start:end]
-            result_json = json.loads(json_str)
-            package_name = result_json["package"]
-        except (json.JSONDecodeError, KeyError, ValueError) as e:
-            return StopEvent(
-                result=f"Error parsing LLM response: {e}. Response: {response_text}"
-            )
+            # Parse JSON response - extract content between { and }
+            try:
+                start = response_text.find("{")
+                end = response_text.rfind("}") + 1
+                json_str = response_text[start:end]
+                result_json = json.loads(json_str)
+                package_name = result_json["package"]
+            except (json.JSONDecodeError, KeyError, ValueError) as e:
+                return StopEvent(
+                    result=f"Error parsing LLM response: {e}. Response: {response_text}"
+                )
 
         logger.info(f"Starting app {package_name}")
         logger.info(self.tools.__class__.__class__)

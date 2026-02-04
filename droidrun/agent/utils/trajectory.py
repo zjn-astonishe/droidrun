@@ -20,7 +20,7 @@ logger = logging.getLogger("droidrun")
 
 
 class Trajectory:
-    def __init__(self, goal: str = None, base_path: str = "trajectories"):
+    def __init__(self, goal: str = None, base_path: str = "output/trajectories"):
         """Initialize trajectory with incremental saving.
 
         Args:
