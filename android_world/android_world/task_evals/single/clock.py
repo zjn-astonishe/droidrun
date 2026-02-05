@@ -27,15 +27,22 @@ def _is_stopwatch_running(
     current_activity: str,
 ) -> bool:
   """Checks if current screen is stopwatch running."""
+  # print(f"DEBUG: current_activity = '{current_activity}'")
+  # print(f"DEBUG: ui_elements count = {len(ui_elements)}")
+  # print(f"DEBUG: ui_elements = {ui_elements}")
+  
   if "DeskClock" not in current_activity:
+    print("Not deskclock")
     return False
   pause_present = False
   lap_present = False
 
   for element in ui_elements:
     if element.content_description == "Pause":
+      print("Pause present")
       pause_present = True
     elif element.content_description == "Lap":
+      print("Lap present")
       lap_present = True
   return pause_present and lap_present
 
@@ -45,7 +52,12 @@ def _is_stopwatch_paused(
     current_activity: str,
 ) -> bool:
   """Checks if current screen is stopwatch paused."""
+  # print(f"DEBUG: current_activity = '{current_activity}'")
+  # print(f"DEBUG: ui_elements count = {len(ui_elements)}")
+  # print(f"DEBUG: ui_elements = {ui_elements}")
+  
   if "DeskClock" not in current_activity:
+    print("Not deskclock")
     return False
   start_present = False
   n_stopwatch = 0
@@ -136,8 +148,10 @@ class ClockTimerEntry(_ClockEval):
       "required": ["hours", "minutes", "seconds"],
   }
   template = (
-      "Create a timer with {hours} hours, {minutes} minutes, and {seconds}"
+      "Tap the keyboard to enter the number."
+      " Create a timer with {hours} hours, {minutes} minutes, and {seconds}"
       " seconds. Do not start the timer."
+      " For example, if you want to create a timer of HH hour, MM minutes, and SS seconds. Click on the numbers 'H-H-M-M-S-S' in order"
   )
 
   def is_successful(
@@ -196,7 +210,17 @@ class ClockStopWatchPausedVerify(_ClockEval):
       env: interface.AsyncEnv,
   ) -> float:
     super().is_successful(env)
-    ui_elements = env.get_state().ui_elements
+    
+    # 添加详细调试信息
+    # print("DEBUG: Getting state from env...")
+    state = env.get_state()
+    # print(f"DEBUG: State object: {state}")
+    # print(f"DEBUG: State.ui_elements: {state.ui_elements}")
+    # print(f"DEBUG: State.forest: {state.forest}")
+    # print(f"DEBUG: State.pixels shape: {state.pixels.shape if state.pixels is not None else 'None'}")
+    
+    ui_elements = state.ui_elements
+    # print(f"ui_elements: {ui_elements}")
     current_activity = adb_utils.get_current_activity(env.controller)[0]
     return (
         1.0
@@ -233,7 +257,8 @@ class ClockStopWatchRunning(_ClockEval):
       env: interface.AsyncEnv,
   ) -> float:
     super().is_successful(env)
-    ui_elements = env.get_state().ui_elements
+    state = env.get_state()
+    ui_elements = state.ui_elements
     current_activity = adb_utils.get_current_activity(env.controller)[0]
     return (
         1.0

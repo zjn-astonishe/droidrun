@@ -45,6 +45,7 @@ class _SystemBrightnessToggle(task_eval.TaskEval):
         env.controller,
     )
     brightness_level = int(res.generic.output.decode().strip())
+    print(f"Current brightness level: {brightness_level}")
 
     if self.params['max_or_min'] == 'max':
       return 1.0 if brightness_level == 255 else 0.0
@@ -126,7 +127,7 @@ class _SystemWifiToggle(task_eval.TaskEval):
       'properties': {'on_or_off': {'type': 'string', 'enum': ['on', 'off']}},
       'required': ['on_or_off'],
   }
-  template = 'Turn wifi {on_or_off}.'
+  template = 'Turn wifi {on_or_off} through the settings app.'
 
   def is_successful(self, env: interface.AsyncEnv) -> float:
     super().is_successful(env)

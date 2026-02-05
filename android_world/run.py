@@ -36,10 +36,12 @@ from android_world.agents import m3a
 from android_world.agents import random_agent
 from android_world.agents import seeact
 from android_world.agents import t3a
+from android_world.agents import ms_agent
 from android_world.env import env_launcher
 from android_world.env import interface
 
 logging.set_verbosity(logging.WARNING)
+# logging.set_verbosity(logging.INFO)
 
 os.environ['GRPC_VERBOSITY'] = 'ERROR'  # Only show errors
 os.environ['GRPC_TRACE'] = 'none'  # Disable tracing
@@ -128,7 +130,7 @@ _OUTPUT_PATH = flags.DEFINE_string(
 )
 
 # Agent specific.
-_AGENT_NAME = flags.DEFINE_string('agent_name', 'm3a_gpt4v', help='Agent name.')
+_AGENT_NAME = flags.DEFINE_string('agent_name', 'ms_agent', help='Agent name.')
 
 _FIXED_TASK_SEED = flags.DEFINE_boolean(
     'fixed_task_seed',
@@ -178,6 +180,14 @@ def _get_agent(
   # SeeAct.
   elif _AGENT_NAME.value == 'seeact':
     agent = seeact.SeeAct(env)
+  # Open-AutoGLM.
+  elif _AGENT_NAME.value == 'ms_agent':
+    # Use the default configuration loading from main.py pattern
+    # The agent will automatically load config from config/config.yaml
+    agent = ms_agent.MSAgent(
+        env=env,
+        name='MSAgent'
+    )
 
   if not agent:
     raise ValueError(f'Unknown agent: {_AGENT_NAME.value}')

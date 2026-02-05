@@ -1,0 +1,146 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,128,1080,2337",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "",
+    "className": "WebView",
+    "text": "Maze Puzzle",
+    "bounds": "0,330,1082,2339",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "maze",
+    "className": "TextView",
+    "text": "X",
+    "bounds": "8,338,1073,832",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "",
+    "className": "View",
+    "text": "android.view.View",
+    "bounds": "8,842,1073,918",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "",
+    "className": "Button",
+    "text": "Up",
+    "bounds": "8,842,115,918",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "",
+    "className": "Button",
+    "text": "Down",
+    "bounds": "124,842,276,918",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "",
+    "className": "Button",
+    "text": "Left",
+    "bounds": "283,842,409,918",
+    "children": []
+  },
+  {
+    "index": 9,
+    "resourceId": "",
+    "className": "Button",
+    "text": "Right",
+    "bounds": "418,842,562,918",
+    "children": []
+  },
+  {
+    "index": 10,
+    "resourceId": "com.android.chrome:id/status_text",
+    "className": "TextView",
+    "text": "No internet connection",
+    "bounds": "351,128,729,183",
+    "children": []
+  },
+  {
+    "index": 11,
+    "resourceId": "com.android.chrome:id/home_button",
+    "className": "ImageButton",
+    "text": "Home",
+    "bounds": "0,183,126,330",
+    "children": []
+  },
+  {
+    "index": 12,
+    "resourceId": "com.android.chrome:id/location_bar",
+    "className": "FrameLayout",
+    "text": "com.android.chrome:id/location_bar",
+    "bounds": "126,183,828,330",
+    "children": []
+  },
+  {
+    "index": 13,
+    "resourceId": "com.android.chrome:id/location_bar_status",
+    "className": "LinearLayout",
+    "text": "com.android.chrome:id/location_bar_status",
+    "bounds": "137,183,221,330",
+    "children": []
+  },
+  {
+    "index": 14,
+    "resourceId": "com.android.chrome:id/location_bar_status_icon",
+    "className": "ImageView",
+    "text": "Your connection to this site is not secure",
+    "bounds": "147,183,210,330",
+    "children": []
+  },
+  {
+    "index": 15,
+    "resourceId": "com.android.chrome:id/url_bar",
+    "className": "EditText",
+    "text": "content://com.android.providers.downloads.documents/document/raw%3A%2Fstorage%2Femulated%2F0%2FDownload%2Ftask.html",
+    "bounds": "221,191,807,322",
+    "children": []
+  },
+  {
+    "index": 16,
+    "resourceId": "com.android.chrome:id/toolbar_buttons",
+    "className": "LinearLayout",
+    "text": "com.android.chrome:id/toolbar_buttons",
+    "bounds": "828,183,1080,330",
+    "children": []
+  },
+  {
+    "index": 17,
+    "resourceId": "com.android.chrome:id/tab_switcher_button",
+    "className": "ImageButton",
+    "text": "Switch or close tabs",
+    "bounds": "828,183,954,330",
+    "children": []
+  },
+  {
+    "index": 18,
+    "resourceId": "com.android.chrome:id/menu_button",
+    "className": "ImageButton",
+    "text": "More options",
+    "bounds": "954,183,1080,330",
+    "children": []
+  }
+]

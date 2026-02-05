@@ -1,0 +1,162 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "141,576,939,1889",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "",
+    "className": "ViewGroup",
+    "text": "android.view.ViewGroup",
+    "bounds": "141,576,939,1889",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/material_hour_tv",
+    "className": "View",
+    "text": "10",
+    "bounds": "257,713,509,923",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/material_minute_tv",
+    "className": "View",
+    "text": "30",
+    "bounds": "572,713,824,923",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/material_clock_face",
+    "className": "ViewGroup",
+    "text": "com.simplemobiletools.calendar.pro:id/material_clock_face",
+    "bounds": "204,1018,876,1690",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "55",
+    "bounds": "346,1065,473,1191",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "00",
+    "bounds": "478,1030,604,1156",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "50",
+    "bounds": "251,1160,377,1287",
+    "children": []
+  },
+  {
+    "index": 9,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "05",
+    "bounds": "609,1065,735,1191",
+    "children": []
+  },
+  {
+    "index": 10,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "10",
+    "bounds": "704,1160,830,1287",
+    "children": []
+  },
+  {
+    "index": 11,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "45",
+    "bounds": "216,1291,342,1417",
+    "children": []
+  },
+  {
+    "index": 12,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "15",
+    "bounds": "740,1292,866,1418",
+    "children": []
+  },
+  {
+    "index": 13,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "40",
+    "bounds": "251,1423,377,1549",
+    "children": []
+  },
+  {
+    "index": 14,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "35",
+    "bounds": "347,1518,473,1644",
+    "children": []
+  },
+  {
+    "index": 15,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "30",
+    "bounds": "478,1554,604,1680",
+    "children": []
+  },
+  {
+    "index": 16,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "25",
+    "bounds": "608,1518,735,1644",
+    "children": []
+  },
+  {
+    "index": 17,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "20",
+    "bounds": "704,1423,830,1549",
+    "children": []
+  },
+  {
+    "index": 18,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/material_timepicker_mode_button",
+    "className": "Button",
+    "text": "Switch to text input mode for the time input.",
+    "bounds": "173,1753,300,1879",
+    "children": []
+  },
+  {
+    "index": 19,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/material_timepicker_cancel_button",
+    "className": "Button",
+    "text": "Cancel",
+    "bounds": "540,1758,729,1884",
+    "children": []
+  },
+  {
+    "index": 20,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/material_timepicker_ok_button",
+    "className": "Button",
+    "text": "OK",
+    "bounds": "750,1758,918,1884",
+    "children": []
+  }
+]

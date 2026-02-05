@@ -825,6 +825,12 @@ class AdbTools(Tools):
         """
         await self._ensure_connected()
 
+        # Wait for UI to stabilize before getting state
+        wait_duration = getattr(self, 'wait_for_stable_ui', 0.3)
+        if wait_duration > 0:
+            logger.debug(f"Waiting {wait_duration}s for UI to stabilize before getting state")
+            await asyncio.sleep(wait_duration)
+
         max_retries = 3
         last_error = None
 

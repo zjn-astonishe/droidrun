@@ -100,8 +100,11 @@ class BrowserTask(task_eval.TaskEval):
     package_name = adb_utils.extract_package_name(
         adb_utils.get_current_activity(env.controller)[0]
     )
+    print(f"package_name: {package_name}")
     if package_name != 'com.android.chrome':
       return 0.0
+    
+    print(f"state ui: {state.ui_elements}")
 
     for element in state.ui_elements:
       if element.text == 'Success!':
@@ -120,8 +123,9 @@ class BrowserMaze(BrowserTask):
   def goal(self) -> str:
     return (
         self.preamble
-        + ' Then navigate the X to the bottom-right cell, by using the'
-        ' direction buttons.'
+        + ' Black squares represent unreachable walls.'
+        + ' Then navigate the X to the bottom-right green cell, by using the'
+        ' direction buttons. '
     )
 
   HTML = """\
@@ -337,8 +341,8 @@ class BrowserMultiply(BrowserTask):
   def goal(self) -> str:
     return (
         self.preamble
-        + ' Then click the button 5 times, remember the numbers displayed, and'
-        ' enter their product in the form.'
+        + ' Then click the button 5 times, remember the numbers displayed each step, '
+        ' finally, enter their product in the form.'
     )
 
   HTML = """\
@@ -450,7 +454,7 @@ class BrowserDraw(BrowserTask):
     return (
         self.preamble
         + ' Then create a drawing using the three colors shown at the top'
-        ' and hit submit.'
+        ' and hit submit. The available colors can be selected with just one Tap.'
     )
 
   HTML = """\

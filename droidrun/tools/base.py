@@ -1,5 +1,6 @@
 import logging
 import sys
+import asyncio
 from abc import ABC, abstractmethod
 from functools import wraps
 from typing import Any, Callable, Dict, List, Optional, Tuple
@@ -22,6 +23,10 @@ class Tools(ABC):
 
     # Coordinate mode (set from config)
     use_normalized: bool = False
+    
+    # Sleep durations from agent config
+    after_sleep_action: float = 1.0  # Sleep after UI actions
+    wait_for_stable_ui: float = 2.5  # Wait before getting state
 
     def convert_point(self, x: int, y: int) -> tuple[int, int]:
         """Convert point to absolute if normalized mode enabled."""
@@ -33,12 +38,19 @@ class Tools(ABC):
     def ui_action(func):
         """
         Decorator to capture screenshots and UI states for actions that modify the UI.
+        Includes sleep after action to allow UI to stabilize.
         """
 
         @wraps(func)
         async def wrapper(*args, **kwargs):
             self = args[0]
             result = await func(*args, **kwargs)
+
+            # Sleep after action to allow UI to stabilize
+            sleep_duration = getattr(self, 'after_sleep_action', 1.0)
+            if sleep_duration > 0:
+                logger.debug(f"Sleeping {sleep_duration}s after UI action to allow stabilization")
+                await asyncio.sleep(sleep_duration)
 
             # Check if save_trajectories attribute exists and is set to "action"
             if (

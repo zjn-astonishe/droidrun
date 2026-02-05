@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "description": "Open the contacts app. Clear any pop-ups that may appear by granting all permissions that are required.",
+  "timestamp": "20260205_131855",
+  "total_actions": 5,
+  "actions": [
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 12: 'Search' (FrameLayout) at coordinates (539, 2207)",
+      "x": 539,
+      "y": 2207,
+      "element_index": 12,
+      "element_text": "Search",
+      "element_bounds": "75,2125,1004,2290"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 28: 'Search apps, web and more' (EditText) at coordinates (618, 228)",
+      "x": 618,
+      "y": 228,
+      "element_index": 28,
+      "element_text": "Search apps, web and more",
+      "element_bounds": "214,156,1023,301"
+    },
+    {
+      "type": "InputTextActionEvent",
+      "action_type": "input_text",
+      "description": "Input text: 'Contacts' (clear=True)",
+      "text": "Contacts"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 3: 'Contacts' (TextView) at coordinates (177, 469)",
+      "x": 177,
+      "y": 469,
+      "element_index": 3,
+      "element_text": "Contacts",
+      "element_bounds": "57,328,298,611"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 5: 'Skip' (Button) at coordinates (659, 2253)",
+      "x": 659,
+      "y": 2253,
+      "element_index": 5,
+      "element_text": "Skip",
+      "element_bounds": "544,2190,775,2316"
+    }
+  ]
+}

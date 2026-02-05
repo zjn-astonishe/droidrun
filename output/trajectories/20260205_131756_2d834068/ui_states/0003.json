@@ -1,0 +1,50 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "com.google.android.contacts:id/product_lockup",
+    "className": "ViewGroup",
+    "text": "Contacts",
+    "bounds": "437,180,643,243",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "android:id/text1",
+    "className": "TextView",
+    "text": "Back up & organize your contacts with Google",
+    "bounds": "63,328,1017,474",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "android:id/text2",
+    "className": "TextView",
+    "text": "Contacts works best with a Google Account. You'll be able to safely back up and sync your contacts to your devices.",
+    "bounds": "63,516,1017,663",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "android:id/button2",
+    "className": "Button",
+    "text": "Skip",
+    "bounds": "544,2190,775,2316",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "android:id/button1",
+    "className": "Button",
+    "text": "Sign in",
+    "bounds": "775,2190,1017,2316",
+    "children": []
+  }
+]

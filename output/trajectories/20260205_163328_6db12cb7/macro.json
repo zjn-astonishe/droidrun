@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "description": "Take one video. You can change mode through 'mode list'",
+  "timestamp": "20260205_163547",
+  "total_actions": 5,
+  "actions": [
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 12: 'Search' (FrameLayout) at coordinates (539, 2207)",
+      "x": 539,
+      "y": 2207,
+      "element_index": 12,
+      "element_text": "Search",
+      "element_bounds": "75,2125,1004,2290"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 3: 'Camera' (TextView) at coordinates (177, 469)",
+      "x": 177,
+      "y": 469,
+      "element_index": 3,
+      "element_text": "Camera",
+      "element_bounds": "57,328,298,611"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 6: 'MODE LIST' (Button) at coordinates (124, 191)",
+      "x": 124,
+      "y": 191,
+      "element_index": 6,
+      "element_text": "MODE LIST",
+      "element_bounds": "0,128,248,254"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 5: 'Switch to Video Camera' (FrameLayout) at coordinates (205, 1383)",
+      "x": 205,
+      "y": 1383,
+      "element_index": 5,
+      "element_text": "Switch to Video Camera",
+      "element_bounds": "0,1302,411,1465"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 5: 'Shutter' (ImageView) at coordinates (540, 2211)",
+      "x": 540,
+      "y": 2211,
+      "element_index": 5,
+      "element_text": "Shutter",
+      "element_bounds": "0,2085,1080,2337"
+    }
+  ]
+}

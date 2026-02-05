@@ -1,0 +1,66 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "com.android.chrome:id/fre_pager",
+    "className": "ViewPager",
+    "text": "com.android.chrome:id/fre_pager",
+    "bounds": "0,128,1080,2337",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,128,1080,2337",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "com.android.chrome:id/scroll_view",
+    "className": "ScrollView",
+    "text": "com.android.chrome:id/scroll_view",
+    "bounds": "0,128,1080,2085",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "com.android.chrome:id/title",
+    "className": "TextView",
+    "text": "Welcome to Chrome",
+    "bounds": "278,1174,802,1252",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "com.android.chrome:id/tos_and_privacy",
+    "className": "TextView",
+    "text": "By using Chrome, you agree to the Google Terms of Service, and the Google Chrome and ChromeOS Additional Terms of Service.",
+    "bounds": "63,1336,1017,1507",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "com.android.chrome:id/send_report_checkbox",
+    "className": "CheckBox",
+    "text": "Help make Chrome better by sending usage statistics and crash reports to Google.",
+    "bounds": "63,1549,1017,1675",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "com.android.chrome:id/terms_accept",
+    "className": "Button",
+    "text": "Accept & continue",
+    "bounds": "326,2148,754,2274",
+    "children": []
+  }
+]

@@ -1,0 +1,187 @@
+{
+  "version": "1.0",
+  "description": "In Simple Calendar Pro, create a recurring calendar event titled 'Meeting with the Team' starting on 2023-10-22 at 20h. The event recurs weekly, forever, and lasts for 60 minutes each occurrence. The event description should be 'We will celebrate client feedback.'.",
+  "timestamp": "20260205_153543",
+  "total_actions": 19,
+  "actions": [
+    {
+      "type": "StartAppEvent",
+      "action_type": "start_app",
+      "description": "Start app com.simplemobiletools.calendar.pro",
+      "package": "com.simplemobiletools.calendar.pro",
+      "activity": ".activities.SplashActivity.Orange"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 35: 'com.simplemobiletools.calendar.pro:id/month_view_background' (View) at coordinates (77, 1577)",
+      "x": 77,
+      "y": 1577,
+      "element_index": 35,
+      "element_text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+      "element_bounds": "0,1425,154,1729"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 61: 'New Event' (ImageButton) at coordinates (964, 2221)",
+      "x": 964,
+      "y": 2221,
+      "element_index": 61,
+      "element_text": "New Event",
+      "element_bounds": "891,2148,1038,2295"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 64: 'Event' (TextView) at coordinates (812, 2221)",
+      "x": 812,
+      "y": 2221,
+      "element_index": 64,
+      "element_text": "Event",
+      "element_bounds": "733,2179,891,2264"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 7: 'Title' (EditText) at coordinates (540, 396)",
+      "x": 540,
+      "y": 396,
+      "element_index": 7,
+      "element_text": "Title",
+      "element_bounds": "42,338,1038,454"
+    },
+    {
+      "type": "InputTextActionEvent",
+      "action_type": "input_text",
+      "description": "Input text: 'Meeting with the Team' (clear=False)",
+      "text": "Meeting with the Team"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 14: '16:00' (TextView) at coordinates (961, 1086)",
+      "x": 961,
+      "y": 1086,
+      "element_index": 14,
+      "element_text": "16:00",
+      "element_bounds": "864,1014,1059,1159"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 18: '20' (TextView) at coordinates (391, 1441)",
+      "x": 391,
+      "y": 1441,
+      "element_index": 18,
+      "element_text": "20",
+      "element_bounds": "328,1378,454,1504"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 7: '00' (TextView) at coordinates (541, 1093)",
+      "x": 541,
+      "y": 1093,
+      "element_index": 7,
+      "element_text": "00",
+      "element_bounds": "478,1030,604,1156"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 20: 'OK' (Button) at coordinates (834, 1821)",
+      "x": 834,
+      "y": 1821,
+      "element_index": 20,
+      "element_text": "OK",
+      "element_bounds": "750,1758,918,1884"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 16: '20:00' (TextView) at coordinates (961, 1231)",
+      "x": 961,
+      "y": 1231,
+      "element_index": 16,
+      "element_text": "20:00",
+      "element_bounds": "864,1159,1059,1304"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 15: '21' (TextView) at coordinates (368, 1354)",
+      "x": 368,
+      "y": 1354,
+      "element_index": 15,
+      "element_text": "21",
+      "element_bounds": "305,1291,431,1417"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 7: '00' (TextView) at coordinates (541, 1093)",
+      "x": 541,
+      "y": 1093,
+      "element_index": 7,
+      "element_text": "00",
+      "element_bounds": "478,1030,604,1156"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 20: 'OK' (Button) at coordinates (834, 1821)",
+      "x": 834,
+      "y": 1821,
+      "element_index": 20,
+      "element_text": "OK",
+      "element_bounds": "750,1758,918,1884"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 19: 'No repetition' (TextView) at coordinates (619, 1744)",
+      "x": 619,
+      "y": 1744,
+      "element_index": 19,
+      "element_text": "No repetition",
+      "element_bounds": "159,1682,1080,1807"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 6: 'Weekly' (RadioButton) at coordinates (540, 1174)",
+      "x": 540,
+      "y": 1174,
+      "element_index": 6,
+      "element_text": "Weekly",
+      "element_bounds": "133,1116,947,1232"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 10: 'Description' (EditText) at coordinates (540, 712)",
+      "x": 540,
+      "y": 712,
+      "element_index": 10,
+      "element_text": "Description",
+      "element_bounds": "42,654,1038,770"
+    },
+    {
+      "type": "InputTextActionEvent",
+      "action_type": "input_text",
+      "description": "Input text: 'We will celebrate client feedback.' (clear=False)",
+      "text": "We will celebrate client feedback."
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 5: 'Save' (Button) at coordinates (1016, 211)",
+      "x": 1016,
+      "y": 211,
+      "element_index": 5,
+      "element_text": "Save",
+      "element_bounds": "953,148,1080,274"
+    }
+  ]
+}

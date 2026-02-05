@@ -1,0 +1,177 @@
+{
+  "version": "1.0",
+  "description": "Assume today is October 15, 2023.In Simple Calendar Pro, create a calendar event for this Thursday at 10h (military time) with the title 'Catch up on Annual Report' and the description 'We will plan upcoming project milestones. Let's be punctual.'. The event should last for 30 mins.",
+  "timestamp": "20260205_144427",
+  "total_actions": 18,
+  "actions": [
+    {
+      "type": "StartAppEvent",
+      "action_type": "start_app",
+      "description": "Start app com.simplemobiletools.calendar.pro",
+      "package": "com.simplemobiletools.calendar.pro",
+      "activity": ".activities.SplashActivity.Orange"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 56: 'New Event' (ImageButton) at coordinates (964, 2221)",
+      "x": 964,
+      "y": 2221,
+      "element_index": 56,
+      "element_text": "New Event",
+      "element_bounds": "891,2148,1038,2295"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 59: 'Event' (TextView) at coordinates (812, 2221)",
+      "x": 812,
+      "y": 2221,
+      "element_index": 59,
+      "element_text": "Event",
+      "element_bounds": "733,2179,891,2264"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 13: 'October 15 (Sun)' (TextView) at coordinates (350, 1086)",
+      "x": 350,
+      "y": 1086,
+      "element_index": 13,
+      "element_text": "October 15 (Sun)",
+      "element_bounds": "159,1014,541,1159"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 25: '19' (View) at coordinates (641, 1356)",
+      "x": 641,
+      "y": 1356,
+      "element_index": 25,
+      "element_text": "19",
+      "element_bounds": "589,1304,693,1409"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 42: 'OK' (Button) at coordinates (844, 1798)",
+      "x": 844,
+      "y": 1798,
+      "element_index": 42,
+      "element_text": "OK",
+      "element_bounds": "760,1735,928,1861"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 14: '16:00' (TextView) at coordinates (961, 1086)",
+      "x": 961,
+      "y": 1086,
+      "element_index": 14,
+      "element_text": "16:00",
+      "element_bounds": "864,1014,1059,1159"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 8: '10' (TextView) at coordinates (314, 1223)",
+      "x": 314,
+      "y": 1223,
+      "element_index": 8,
+      "element_text": "10",
+      "element_bounds": "251,1160,377,1287"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 20: 'OK' (Button) at coordinates (834, 1821)",
+      "x": 834,
+      "y": 1821,
+      "element_index": 20,
+      "element_text": "OK",
+      "element_bounds": "750,1758,918,1884"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 7: 'Title' (EditText) at coordinates (540, 396)",
+      "x": 540,
+      "y": 396,
+      "element_index": 7,
+      "element_text": "Title",
+      "element_bounds": "42,338,1038,454"
+    },
+    {
+      "type": "InputTextActionEvent",
+      "action_type": "input_text",
+      "description": "Input text: 'Catch up on Annual Report' (clear=False)",
+      "text": "Catch up on Annual Report"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 10: 'Description' (EditText) at coordinates (540, 712)",
+      "x": 540,
+      "y": 712,
+      "element_index": 10,
+      "element_text": "Description",
+      "element_bounds": "42,654,1038,770"
+    },
+    {
+      "type": "InputTextActionEvent",
+      "action_type": "input_text",
+      "description": "Input text: 'We will plan upcoming project milestones. Let's be...' (clear=False)",
+      "text": "We will plan upcoming project milestones. Let's be punctual."
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 16: '10:00' (TextView) at coordinates (961, 1284)",
+      "x": 961,
+      "y": 1284,
+      "element_index": 16,
+      "element_text": "10:00",
+      "element_bounds": "864,1212,1059,1357"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 4: '00' (View) at coordinates (698, 818)",
+      "x": 698,
+      "y": 818,
+      "element_index": 4,
+      "element_text": "00",
+      "element_bounds": "572,713,824,923"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 15: '30' (TextView) at coordinates (541, 1617)",
+      "x": 541,
+      "y": 1617,
+      "element_index": 15,
+      "element_text": "30",
+      "element_bounds": "478,1554,604,1680"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 20: 'OK' (Button) at coordinates (834, 1821)",
+      "x": 834,
+      "y": 1821,
+      "element_index": 20,
+      "element_text": "OK",
+      "element_bounds": "750,1758,918,1884"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 5: 'Save' (Button) at coordinates (1016, 211)",
+      "x": 1016,
+      "y": 211,
+      "element_index": 5,
+      "element_text": "Save",
+      "element_bounds": "953,148,1080,274"
+    }
+  ]
+}

@@ -86,7 +86,7 @@ class SettingsData:
 
     # Timing
     after_sleep_action: float = 1.0
-    wait_for_stable_ui: float = 0.3
+    wait_for_stable_ui: float = 2.5
 
     @classmethod
     def from_config(cls, config: DroidrunConfig) -> SettingsData:

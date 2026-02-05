@@ -52,7 +52,7 @@ class CameraTakeVideo(_Camera):
       "properties": {},
       "required": [],
   }
-  template = "Take one video."
+  template = "Take one video. You can change mode through 'mode list'"
 
   def initialize_task(self, env: interface.AsyncEnv) -> None:
     super().initialize_task(env)

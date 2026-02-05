@@ -12,6 +12,7 @@ import click
 from droidrun.skill.skill_extractor import SkillExtractor
 from droidrun.skill.skill_executor import SkillExecutor
 from droidrun.skill.skill_library import SkillLibrary
+from droidrun.skill.code_generator import SkillCodeGenerator
 
 logger = logging.getLogger("droidrun")
 
@@ -254,6 +255,56 @@ def suggest(skill_path: str):
     except Exception as e:
         click.echo(f"❌ Error: {str(e)}", err=True)
         raise click.Abort()
+
+
+@skill.command()
+@click.argument("skill_path", type=click.Path(exists=True))
+@click.option("--output", "-o", default="skills", help="Output directory for generated code")
+@click.option("--no-llm", is_flag=True, help="Disable LLM-based code generation")
+def generate_code(skill_path: str, output: str, no_llm: bool):
+    """Generate executable Python code from a skill."""
+    from droidrun.skill.skill import Skill
+
+    click.echo(f"📖 Loading skill from: {skill_path}")
+
+    try:
+        skill = Skill.load(skill_path)
+        click.echo(f"✨ Loaded skill: {skill.name}")
+
+        # Create code generator
+        generator = SkillCodeGenerator()
+
+        # Generate code
+        click.echo(f"\n🔧 Generating Python code...")
+        code = generator.generate_function_code(skill, use_llm=not no_llm)
+
+        # Save code
+        file_path = generator.save_skill_code(skill, output, use_llm=not no_llm)
+
+        # Update skill library
+        library_path = Path(output) / "skill_library.json"
+        generator.update_skill_library(skill, str(library_path))
+
+        click.echo(f"\n✅ Code generated successfully!")
+        click.echo(f"   Function: {skill.name}()")
+        click.echo(f"   File: {file_path}")
+        click.echo(f"   Library: {library_path}")
+
+        # Show preview
+        click.echo(f"\n📄 Code preview (first 15 lines):")
+        lines = code.split('\n')[:15]
+        for line in lines:
+            click.echo(f"   {line}")
+        if len(code.split('\n')) > 15:
+            click.echo(f"   ... ({len(code.split(chr(10))) - 15} more lines)")
+
+    except Exception as e:
+        click.echo(f"❌ Error: {str(e)}", err=True)
+        import traceback
+        traceback.print_exc()
+        raise click.Abort()
+
+
 
 
 if __name__ == "__main__":

@@ -152,14 +152,41 @@ def forest_to_ui_elements(
   Returns:
     The extracted UI elements.
   """
+  # print(f"DEBUG: forest_to_ui_elements called")
+  # print(f"DEBUG: forest = {forest}")
+  # print(f"DEBUG: exclude_invisible_elements = {exclude_invisible_elements}")
+  # print(f"DEBUG: screen_size = {screen_size}")
+  
+  if forest is None:
+    # print("DEBUG: Forest is None, returning empty list")
+    return []
+  
   elements = []
-  for window in forest.windows:
-    for node in window.tree.nodes:
-      if not node.child_ids or node.content_description or node.is_scrollable:
+  total_nodes = 0
+  visible_nodes = 0
+  extracted_nodes = 0
+  
+  for i, window in enumerate(forest.windows):
+    # print(f"DEBUG: Processing window {i} with {len(window.tree.nodes)} nodes")
+    for j, node in enumerate(window.tree.nodes):
+      total_nodes += 1
+      if node.is_visible_to_user:
+        visible_nodes += 1
+      
+      # Check if node should be extracted
+      should_extract = not node.child_ids or node.content_description or node.is_scrollable
+      
+      if should_extract:
         if exclude_invisible_elements and not node.is_visible_to_user:
+          # print(f"DEBUG: Skipping invisible node {j}: {node.text or node.content_description or 'no text'}")
           continue
         else:
+          # print(f"DEBUG: Extracting node {j}: text='{node.text}', content_desc='{node.content_description}', visible={node.is_visible_to_user}")
           elements.append(accessibility_node_to_ui_element(node, screen_size))
+          extracted_nodes += 1
+  
+  # print(f"DEBUG: Total nodes: {total_nodes}, Visible nodes: {visible_nodes}, Extracted nodes: {extracted_nodes}")
+  # print(f"DEBUG: Returning {len(elements)} UI elements")
   return elements
 
 

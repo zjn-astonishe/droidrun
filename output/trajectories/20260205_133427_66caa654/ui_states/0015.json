@@ -1,0 +1,226 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "com.google.android.documentsui:id/coordinator_layout",
+    "className": "ViewGroup",
+    "text": "com.google.android.documentsui:id/coordinator_layout",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "com.google.android.documentsui:id/drawer_layout",
+    "className": "DrawerLayout",
+    "text": "com.google.android.documentsui:id/drawer_layout",
+    "bounds": "0,128,1080,2400",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "",
+    "className": "ScrollView",
+    "text": "android.widget.ScrollView",
+    "bounds": "0,128,1080,2400",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "",
+    "className": "ScrollView",
+    "text": "android.widget.ScrollView",
+    "bounds": "0,128,1080,667",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "com.google.android.documentsui:id/horizontal_breadcrumb",
+    "className": "RecyclerView",
+    "text": "com.google.android.documentsui:id/horizontal_breadcrumb",
+    "bounds": "0,257,1080,383",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "0,257,288,383",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "com.google.android.documentsui:id/breadcrumb_text",
+    "className": "TextView",
+    "text": "Downloads",
+    "bounds": "0,257,288,383",
+    "children": []
+  },
+  {
+    "index": 9,
+    "resourceId": "",
+    "className": "HorizontalScrollView",
+    "text": "android.widget.HorizontalScrollView",
+    "bounds": "0,383,1080,509",
+    "children": []
+  },
+  {
+    "index": 10,
+    "resourceId": "",
+    "className": "CompoundButton",
+    "text": "Images",
+    "bounds": "64,383,319,509",
+    "children": []
+  },
+  {
+    "index": 11,
+    "resourceId": "",
+    "className": "CompoundButton",
+    "text": "Audio",
+    "bounds": "341,383,571,509",
+    "children": []
+  },
+  {
+    "index": 12,
+    "resourceId": "",
+    "className": "CompoundButton",
+    "text": "Videos",
+    "bounds": "593,383,840,509",
+    "children": []
+  },
+  {
+    "index": 13,
+    "resourceId": "",
+    "className": "CompoundButton",
+    "text": "Documents",
+    "bounds": "862,383,1080,509",
+    "children": []
+  },
+  {
+    "index": 14,
+    "resourceId": "com.google.android.documentsui:id/header_title",
+    "className": "TextView",
+    "text": "Files in Downloads",
+    "bounds": "63,509,890,667",
+    "children": []
+  },
+  {
+    "index": 15,
+    "resourceId": "com.google.android.documentsui:id/sub_menu_list",
+    "className": "TextView",
+    "text": "List view",
+    "bounds": "890,525,1017,651",
+    "children": []
+  },
+  {
+    "index": 16,
+    "resourceId": "com.google.android.documentsui:id/dir_list",
+    "className": "RecyclerView",
+    "text": "com.google.android.documentsui:id/dir_list",
+    "bounds": "0,128,1080,2400",
+    "children": []
+  },
+  {
+    "index": 17,
+    "resourceId": "com.google.android.documentsui:id/item_root",
+    "className": "CardView",
+    "text": "com.google.android.documentsui:id/item_root",
+    "bounds": "64,678,529,1279",
+    "children": []
+  },
+  {
+    "index": 18,
+    "resourceId": "android:id/title",
+    "className": "TextView",
+    "text": "task.html",
+    "bounds": "196,1164,349,1215",
+    "children": []
+  },
+  {
+    "index": 19,
+    "resourceId": "com.google.android.documentsui:id/details",
+    "className": "TextView",
+    "text": "4.77 kB",
+    "bounds": "196,1215,302,1258",
+    "children": []
+  },
+  {
+    "index": 20,
+    "resourceId": "com.google.android.documentsui:id/date",
+    "className": "TextView",
+    "text": "13:34",
+    "bounds": "313,1215,393,1258",
+    "children": []
+  },
+  {
+    "index": 21,
+    "resourceId": "com.google.android.documentsui:id/drawer_edge",
+    "className": "View",
+    "text": "com.google.android.documentsui:id/drawer_edge",
+    "bounds": "0,128,32,2400",
+    "children": []
+  },
+  {
+    "index": 22,
+    "resourceId": "com.google.android.documentsui:id/container_save",
+    "className": "ViewGroup",
+    "text": "com.google.android.documentsui:id/container_save",
+    "bounds": "0,2337,1080,2400",
+    "children": []
+  },
+  {
+    "index": 23,
+    "resourceId": "com.google.android.documentsui:id/action_mode_bar",
+    "className": "ViewGroup",
+    "text": "com.google.android.documentsui:id/action_mode_bar",
+    "bounds": "0,128,1080,254",
+    "children": []
+  },
+  {
+    "index": 24,
+    "resourceId": "com.google.android.documentsui:id/action_mode_close_button",
+    "className": "ImageView",
+    "text": "Cancel",
+    "bounds": "0,128,147,254",
+    "children": []
+  },
+  {
+    "index": 25,
+    "resourceId": "com.google.android.documentsui:id/action_bar_title",
+    "className": "TextView",
+    "text": "1 selected",
+    "bounds": "189,159,406,222",
+    "children": []
+  },
+  {
+    "index": 26,
+    "resourceId": "com.google.android.documentsui:id/action_menu_share",
+    "className": "TextView",
+    "text": "Share",
+    "bounds": "700,128,827,254",
+    "children": []
+  },
+  {
+    "index": 27,
+    "resourceId": "com.google.android.documentsui:id/action_menu_delete",
+    "className": "TextView",
+    "text": "Delete",
+    "bounds": "827,128,954,254",
+    "children": []
+  },
+  {
+    "index": 28,
+    "resourceId": "",
+    "className": "ImageView",
+    "text": "More options",
+    "bounds": "954,128,1080,254",
+    "children": []
+  }
+]

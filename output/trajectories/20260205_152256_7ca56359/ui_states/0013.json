@@ -1,0 +1,74 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "28,642,1052,1822",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/dialog_radio_holder",
+    "className": "ScrollView",
+    "text": "com.simplemobiletools.calendar.pro:id/dialog_radio_holder",
+    "bounds": "91,852,989,1612",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/dialog_radio_group",
+    "className": "RadioGroup",
+    "text": "com.simplemobiletools.calendar.pro:id/dialog_radio_group",
+    "bounds": "91,852,989,1612",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "",
+    "className": "RadioButton",
+    "text": "No repetition",
+    "bounds": "133,884,947,1000",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "",
+    "className": "RadioButton",
+    "text": "Daily",
+    "bounds": "133,1000,947,1116",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "",
+    "className": "RadioButton",
+    "text": "Weekly",
+    "bounds": "133,1116,947,1232",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "",
+    "className": "RadioButton",
+    "text": "Monthly",
+    "bounds": "133,1232,947,1348",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "",
+    "className": "RadioButton",
+    "text": "Yearly",
+    "bounds": "133,1348,947,1464",
+    "children": []
+  },
+  {
+    "index": 9,
+    "resourceId": "",
+    "className": "RadioButton",
+    "text": "Custom",
+    "bounds": "133,1464,947,1580",
+    "children": []
+  }
+]

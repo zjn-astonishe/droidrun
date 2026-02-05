@@ -1,0 +1,42 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "28,838,1052,1627",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/delete_event_description",
+    "className": "TextView",
+    "text": "Are you sure you want to proceed with the deletion?",
+    "bounds": "154,1111,926,1217",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/buttonPanel",
+    "className": "ScrollView",
+    "text": "com.simplemobiletools.calendar.pro:id/buttonPanel",
+    "bounds": "91,1217,989,1417",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "android:id/button2",
+    "className": "Button",
+    "text": "No",
+    "bounds": "569,1254,737,1380",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "android:id/button1",
+    "className": "Button",
+    "text": "Yes",
+    "bounds": "758,1254,926,1380",
+    "children": []
+  }
+]

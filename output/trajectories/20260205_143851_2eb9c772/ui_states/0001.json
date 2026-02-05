@@ -1,0 +1,450 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/main_coordinator",
+    "className": "ViewGroup",
+    "text": "com.simplemobiletools.calendar.pro:id/main_coordinator",
+    "bounds": "0,128,1080,2337",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/top_toolbar_holder",
+    "className": "RelativeLayout",
+    "text": "com.simplemobiletools.calendar.pro:id/top_toolbar_holder",
+    "bounds": "42,149,1038,275",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/top_toolbar_search_icon",
+    "className": "ImageView",
+    "text": "Search",
+    "bounds": "42,149,147,275",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/top_toolbar_search",
+    "className": "EditText",
+    "text": "Search",
+    "bounds": "147,149,626,275",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/change_view",
+    "className": "Button",
+    "text": "Change view",
+    "bounds": "668,149,795,275",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/settings",
+    "className": "Button",
+    "text": "Settings",
+    "bounds": "795,149,922,275",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "",
+    "className": "ImageView",
+    "text": "More options",
+    "bounds": "922,149,1027,275",
+    "children": []
+  },
+  {
+    "index": 9,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/calendar_coordinator",
+    "className": "ViewGroup",
+    "text": "com.simplemobiletools.calendar.pro:id/calendar_coordinator",
+    "bounds": "0,296,1080,2337",
+    "children": []
+  },
+  {
+    "index": 10,
+    "resourceId": "",
+    "className": "i",
+    "text": "w4.i",
+    "bounds": "0,296,1080,2337",
+    "children": []
+  },
+  {
+    "index": 11,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/top_left_arrow",
+    "className": "ImageView",
+    "text": "com.simplemobiletools.calendar.pro:id/top_left_arrow",
+    "bounds": "0,296,147,438",
+    "children": []
+  },
+  {
+    "index": 12,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/top_value",
+    "className": "TextView",
+    "text": "October",
+    "bounds": "147,296,933,438",
+    "children": []
+  },
+  {
+    "index": 13,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/top_right_arrow",
+    "className": "ImageView",
+    "text": "com.simplemobiletools.calendar.pro:id/top_right_arrow",
+    "bounds": "933,296,1080,438",
+    "children": []
+  },
+  {
+    "index": 14,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "0,512,154,816",
+    "children": []
+  },
+  {
+    "index": 15,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "154,512,308,816",
+    "children": []
+  },
+  {
+    "index": 16,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "309,512,463,816",
+    "children": []
+  },
+  {
+    "index": 17,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "463,512,617,816",
+    "children": []
+  },
+  {
+    "index": 18,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "617,512,771,816",
+    "children": []
+  },
+  {
+    "index": 19,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "771,512,925,816",
+    "children": []
+  },
+  {
+    "index": 20,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "926,512,1080,816",
+    "children": []
+  },
+  {
+    "index": 21,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "0,816,154,1120",
+    "children": []
+  },
+  {
+    "index": 22,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "154,816,308,1120",
+    "children": []
+  },
+  {
+    "index": 23,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "309,816,463,1120",
+    "children": []
+  },
+  {
+    "index": 24,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "463,816,617,1120",
+    "children": []
+  },
+  {
+    "index": 25,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "617,816,771,1120",
+    "children": []
+  },
+  {
+    "index": 26,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "771,816,925,1120",
+    "children": []
+  },
+  {
+    "index": 27,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "926,816,1080,1120",
+    "children": []
+  },
+  {
+    "index": 28,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "0,1120,154,1424",
+    "children": []
+  },
+  {
+    "index": 29,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "154,1120,308,1424",
+    "children": []
+  },
+  {
+    "index": 30,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "309,1120,463,1424",
+    "children": []
+  },
+  {
+    "index": 31,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "463,1120,617,1424",
+    "children": []
+  },
+  {
+    "index": 32,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "617,1120,771,1424",
+    "children": []
+  },
+  {
+    "index": 33,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "771,1120,925,1424",
+    "children": []
+  },
+  {
+    "index": 34,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "926,1120,1080,1424",
+    "children": []
+  },
+  {
+    "index": 35,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "0,1425,154,1729",
+    "children": []
+  },
+  {
+    "index": 36,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "154,1425,308,1729",
+    "children": []
+  },
+  {
+    "index": 37,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "309,1425,463,1729",
+    "children": []
+  },
+  {
+    "index": 38,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "463,1425,617,1729",
+    "children": []
+  },
+  {
+    "index": 39,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "617,1425,771,1729",
+    "children": []
+  },
+  {
+    "index": 40,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "771,1425,925,1729",
+    "children": []
+  },
+  {
+    "index": 41,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "926,1425,1080,1729",
+    "children": []
+  },
+  {
+    "index": 42,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "0,1729,154,2033",
+    "children": []
+  },
+  {
+    "index": 43,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "154,1729,308,2033",
+    "children": []
+  },
+  {
+    "index": 44,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "309,1729,463,2033",
+    "children": []
+  },
+  {
+    "index": 45,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "463,1729,617,2033",
+    "children": []
+  },
+  {
+    "index": 46,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "617,1729,771,2033",
+    "children": []
+  },
+  {
+    "index": 47,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "771,1729,925,2033",
+    "children": []
+  },
+  {
+    "index": 48,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "926,1729,1080,2033",
+    "children": []
+  },
+  {
+    "index": 49,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "0,2033,154,2337",
+    "children": []
+  },
+  {
+    "index": 50,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "154,2033,308,2337",
+    "children": []
+  },
+  {
+    "index": 51,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "309,2033,463,2337",
+    "children": []
+  },
+  {
+    "index": 52,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "463,2033,617,2337",
+    "children": []
+  },
+  {
+    "index": 53,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "617,2033,771,2337",
+    "children": []
+  },
+  {
+    "index": 54,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "771,2033,925,2337",
+    "children": []
+  },
+  {
+    "index": 55,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "className": "View",
+    "text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+    "bounds": "926,2033,1080,2337",
+    "children": []
+  },
+  {
+    "index": 56,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/calendar_fab",
+    "className": "ImageButton",
+    "text": "New Event",
+    "bounds": "891,2148,1038,2295",
+    "children": []
+  }
+]

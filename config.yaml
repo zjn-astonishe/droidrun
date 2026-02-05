@@ -16,7 +16,7 @@ agent:
   # Sleep duration after each action, waits for ui state to be updated (seconds)
   after_sleep_action: 1.0
   # Wait duration for UI to stabilize (seconds)
-  wait_for_stable_ui: 0.3
+  wait_for_stable_ui: 2.5
 
   # Coordinate system for swipe and state bounds output
   # false = absolute pixels (default)
@@ -85,10 +85,10 @@ agent:
 llm_profiles:
   # Manager: Plans and reasons about task progress
   manager:
-    provider: OpenAI
-    model: gpt-5
-    # provider: OpenAILike
-    # model: gemini-2.5-pro
+    # provider: OpenAI
+    # model: gpt-4o
+    provider: OpenAILike
+    model: gemini-2.5-pro
     api_base: https://api.zhizengzeng.com/v1/chat/completions
     base_url: https://api.zhizengzeng.com/v1/chat/completions
     # provider: OpenAILike
@@ -97,10 +97,10 @@ llm_profiles:
     temperature: 0.2
     kwargs: {}
   executor:
-    provider: OpenAI
-    model: gpt-5
-    # provider: OpenAILike
-    # model: gemini-2.5-pro
+    # provider: OpenAI
+    # model: gpt-4o
+    provider: OpenAILike
+    model: gemini-2.5-pro
     api_base: https://api.zhizengzeng.com/v1/chat/completions
     base_url: https://api.zhizengzeng.com/v1/chat/completions
     # provider: OpenAILike
@@ -109,15 +109,15 @@ llm_profiles:
     temperature: 0.1
     kwargs: {}
   codeact:
-    provider: OpenAI
-    model: gpt-5
+    # provider: OpenAI
+    # model: gpt-5
     # provider: OpenAILike
     # model: gemini-2.5-pro
-    api_base: https://api.zhizengzeng.com/v1/chat/completions
-    base_url: https://api.zhizengzeng.com/v1/chat/completions
-    # provider: OpenAILike
-    # model: qwen3-vl-8B-instruct
-    # api_base: http://localhost:8001/v1
+    # api_base: https://api.zhizengzeng.com/v1/chat/completions
+    # base_url: https://api.zhizengzeng.com/v1/chat/completions
+    provider: OpenAILike
+    model: qwen3-vl-8B-instruct
+    api_base: http://localhost:8001/v1
     temperature: 0.2
     kwargs: {}
   text_manipulator:

@@ -1,0 +1,242 @@
+{
+  "version": "1.0",
+  "description": "Open the file task.html in Downloads in the file manager; when prompted open it with Chrome. Then navigate the X to the bottom-right cell, by using the direction buttons.",
+  "timestamp": "20260205_133948",
+  "total_actions": 25,
+  "actions": [
+    {
+      "type": "StartAppEvent",
+      "action_type": "start_app",
+      "description": "Start app com.google.android.documentsui",
+      "package": "com.google.android.documentsui",
+      "activity": "com.android.documentsui.LauncherActivity"
+    },
+    {
+      "type": "SwipeActionEvent",
+      "action_type": "swipe",
+      "description": "Swipe from (272, 1189) to (272, 1189) in 1000 milliseconds",
+      "start_x": 272,
+      "start_y": 1189,
+      "end_x": 272,
+      "end_y": 1189,
+      "duration_ms": 1000
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 28: 'More options' (ImageView) at coordinates (1017, 191)",
+      "x": 1017,
+      "y": 191,
+      "element_index": 28,
+      "element_text": "More options",
+      "element_bounds": "954,128,1080,254"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 4: 'Open with' (TextView) at coordinates (812, 316)",
+      "x": 812,
+      "y": 316,
+      "element_index": 4,
+      "element_text": "Open with",
+      "element_bounds": "597,291,1028,342"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 8: 'Chrome' (TextView) at coordinates (134, 2240)",
+      "x": 134,
+      "y": 2240,
+      "element_index": 8,
+      "element_text": "Chrome",
+      "element_bounds": "78,2219,191,2262"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 8: 'Accept & continue' (Button) at coordinates (540, 2211)",
+      "x": 540,
+      "y": 2211,
+      "element_index": 8,
+      "element_text": "Accept & continue",
+      "element_bounds": "326,2148,754,2274"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 9: 'No thanks' (Button) at coordinates (157, 2232)",
+      "x": 157,
+      "y": 2232,
+      "element_index": 9,
+      "element_text": "No thanks",
+      "element_bounds": "42,2169,273,2295"
+    },
+    {
+      "type": "KeyPressActionEvent",
+      "action_type": "key_press",
+      "description": "Pressed key HOME",
+      "keycode": 3,
+      "key_name": "HOME"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 13: 'Google app' (ImageView) at coordinates (149, 2207)",
+      "x": 149,
+      "y": 2207,
+      "element_index": 13,
+      "element_text": "Google app",
+      "element_bounds": "86,2144,212,2270"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 6: 'weather Guangzhou' (TextView) at coordinates (476, 359)",
+      "x": 476,
+      "y": 359,
+      "element_index": 6,
+      "element_text": "weather Guangzhou",
+      "element_bounds": "189,331,764,388"
+    },
+    {
+      "type": "InputTextActionEvent",
+      "action_type": "input_text",
+      "description": "Input text: 'File Manager' (clear=True)",
+      "text": "File Manager"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 10: 'file manager' (TextView) at coordinates (304, 346)",
+      "x": 304,
+      "y": 346,
+      "element_index": 10,
+      "element_text": "file manager",
+      "element_bounds": "189,318,420,375"
+    },
+    {
+      "type": "KeyPressActionEvent",
+      "action_type": "key_press",
+      "description": "Pressed key HOME",
+      "keycode": 3,
+      "key_name": "HOME"
+    },
+    {
+      "type": "StartAppEvent",
+      "action_type": "start_app",
+      "description": "Start app com.google.android.documentsui",
+      "package": "com.google.android.documentsui",
+      "activity": "com.android.documentsui.LauncherActivity"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 28: 'More options' (ImageView) at coordinates (1017, 191)",
+      "x": 1017,
+      "y": 191,
+      "element_index": 28,
+      "element_text": "More options",
+      "element_bounds": "954,128,1080,254"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 4: 'Open with' (TextView) at coordinates (812, 316)",
+      "x": 812,
+      "y": 316,
+      "element_index": 4,
+      "element_text": "Open with",
+      "element_bounds": "597,291,1028,342"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 8: 'Chrome' (TextView) at coordinates (134, 2240)",
+      "x": 134,
+      "y": 2240,
+      "element_index": 8,
+      "element_text": "Chrome",
+      "element_bounds": "78,2219,191,2262"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 6: 'OK' (Button) at coordinates (844, 1594)",
+      "x": 844,
+      "y": 1594,
+      "element_index": 6,
+      "element_text": "OK",
+      "element_bounds": "729,1531,960,1657"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 9: 'Right' (Button) at coordinates (490, 880)",
+      "x": 490,
+      "y": 880,
+      "element_index": 9,
+      "element_text": "Right",
+      "element_bounds": "418,842,562,918"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 7: 'Down' (Button) at coordinates (200, 880)",
+      "x": 200,
+      "y": 880,
+      "element_index": 7,
+      "element_text": "Down",
+      "element_bounds": "124,842,276,918"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 9: 'Right' (Button) at coordinates (490, 880)",
+      "x": 490,
+      "y": 880,
+      "element_index": 9,
+      "element_text": "Right",
+      "element_bounds": "418,842,562,918"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 7: 'Down' (Button) at coordinates (200, 880)",
+      "x": 200,
+      "y": 880,
+      "element_index": 7,
+      "element_text": "Down",
+      "element_bounds": "124,842,276,918"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 9: 'Right' (Button) at coordinates (490, 880)",
+      "x": 490,
+      "y": 880,
+      "element_index": 9,
+      "element_text": "Right",
+      "element_bounds": "418,842,562,918"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 7: 'Down' (Button) at coordinates (200, 880)",
+      "x": 200,
+      "y": 880,
+      "element_index": 7,
+      "element_text": "Down",
+      "element_bounds": "124,842,276,918"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 9: 'Right' (Button) at coordinates (490, 880)",
+      "x": 490,
+      "y": 880,
+      "element_index": 9,
+      "element_text": "Right",
+      "element_bounds": "418,842,562,918"
+    }
+  ]
+}

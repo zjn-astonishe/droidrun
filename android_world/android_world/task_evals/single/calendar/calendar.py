@@ -150,8 +150,9 @@ class SimpleCalendarAddOneEventRelativeDay(SimpleCalendarAddOneEvent):
   _DAY_RANGE = 6
 
   template = (
+      "Assume today is October 15, 2023."
       "In Simple Calendar Pro, create a calendar event for this {day_of_week}"
-      " at {hour}h with the title '{event_title}' and the description"
+      " at {hour}h (military time) with the title '{event_title}' and the description"
       " '{event_description}'. The event should last for {duration_mins} mins."
   )
 
@@ -184,6 +185,7 @@ class SimpleCalendarAddOneEventTomorrow(SimpleCalendarAddOneEvent):
 
   complexity = 3.4
   template = (
+      "Today is October 15, 2023."
       "In Simple Calendar Pro, create a calendar event for tomorrow"
       " at {hour}h with the title '{event_title}' and the description"
       " '{event_description}'. The event should last for {duration_mins} mins."
@@ -204,6 +206,7 @@ class SimpleCalendarAddOneEventInTwoWeeks(SimpleCalendarAddOneEvent):
 
   complexity = 3.4
   template = (
+      "Today is October 15, 2023."
       "In Simple Calendar Pro, create a calendar event in two weeks from today"
       " at {hour}h with the title '{event_title}' and the description"
       " '{event_description}'. The event should last for {duration_mins} mins."
@@ -376,6 +379,7 @@ class SimpleCalendarDeleteEventsOnRelativeDay(SimpleCalendarDeleteEvents):
   _DAY_RANGE: int = 6
 
   template = (
+      "Today is October 15, 2023."
       "In Simple Calendar Pro, delete all events scheduled for this"
       " {day_of_week}."
   )

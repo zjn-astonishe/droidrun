@@ -88,7 +88,7 @@ class AgentConfig:
     reasoning: bool = False
     streaming: bool = True
     after_sleep_action: float = 1.0
-    wait_for_stable_ui: float = 0.3
+    wait_for_stable_ui: float = 2.5
     use_normalized_coordinates: bool = False
 
     codeact: CodeActConfig = field(default_factory=CodeActConfig)

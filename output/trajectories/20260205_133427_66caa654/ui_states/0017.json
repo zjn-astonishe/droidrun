@@ -1,0 +1,82 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "android:id/contentPanel",
+    "className": "ScrollView",
+    "text": "android:id/contentPanel",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "android:id/profile_tabhost",
+    "className": "TabHost",
+    "text": "android:id/profile_tabhost",
+    "bounds": "0,1991,1080,2400",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "android:id/profile_pager",
+    "className": "ViewPager",
+    "text": "android:id/profile_pager",
+    "bounds": "0,1991,1080,2400",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "android:id/resolver_list",
+    "className": "RecyclerView",
+    "text": "android:id/resolver_list",
+    "bounds": "0,1991,1080,2400",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "0,1991,1080,2337",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "android:id/item",
+    "className": "LinearLayout",
+    "text": "android:id/item",
+    "bounds": "0,1991,270,2337",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "android:id/text1",
+    "className": "TextView",
+    "text": "Chrome",
+    "bounds": "78,2219,191,2262",
+    "children": []
+  },
+  {
+    "index": 9,
+    "resourceId": "android:id/item",
+    "className": "LinearLayout",
+    "text": "android:id/item",
+    "bounds": "270,1991,540,2337",
+    "children": []
+  },
+  {
+    "index": 10,
+    "resourceId": "android:id/text1",
+    "className": "TextView",
+    "text": "HTML Viewer",
+    "bounds": "309,2219,501,2262",
+    "children": []
+  }
+]

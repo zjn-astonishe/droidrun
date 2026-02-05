@@ -1,0 +1,186 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_coordinator",
+    "className": "ViewGroup",
+    "text": "com.simplemobiletools.calendar.pro:id/event_coordinator",
+    "bounds": "0,128,1080,2400",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "",
+    "className": "ImageButton",
+    "text": "Back",
+    "bounds": "0,138,147,285",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "New Event",
+    "bounds": "157,175,414,249",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/save",
+    "className": "Button",
+    "text": "Save",
+    "bounds": "953,148,1080,274",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_nested_scrollview",
+    "className": "ScrollView",
+    "text": "com.simplemobiletools.calendar.pro:id/event_nested_scrollview",
+    "bounds": "0,296,1080,2400",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_title",
+    "className": "EditText",
+    "text": "Appointment for Campaign",
+    "bounds": "42,338,1038,454",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_location",
+    "className": "EditText",
+    "text": "Location",
+    "bounds": "42,496,922,612",
+    "children": []
+  },
+  {
+    "index": 9,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_show_on_map",
+    "className": "ImageView",
+    "text": "com.simplemobiletools.calendar.pro:id/event_show_on_map",
+    "bounds": "922,496,1038,612",
+    "children": []
+  },
+  {
+    "index": 10,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_description",
+    "className": "EditText",
+    "text": "We will celebrate business objectives.",
+    "bounds": "42,654,1038,770",
+    "children": []
+  },
+  {
+    "index": 11,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_all_day_holder",
+    "className": "RelativeLayout",
+    "text": "com.simplemobiletools.calendar.pro:id/event_all_day_holder",
+    "bounds": "159,846,1080,1014",
+    "children": []
+  },
+  {
+    "index": 12,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_all_day",
+    "className": "CheckBox",
+    "text": "All-day",
+    "bounds": "159,867,1038,993",
+    "children": []
+  },
+  {
+    "index": 13,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_start_date",
+    "className": "TextView",
+    "text": "October 16 (Mon)",
+    "bounds": "159,1014,554,1159",
+    "children": []
+  },
+  {
+    "index": 14,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_start_time",
+    "className": "TextView",
+    "text": "16:00",
+    "bounds": "864,1014,1059,1159",
+    "children": []
+  },
+  {
+    "index": 15,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_end_date",
+    "className": "TextView",
+    "text": "October 16 (Mon)",
+    "bounds": "159,1159,554,1304",
+    "children": []
+  },
+  {
+    "index": 16,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_end_time",
+    "className": "TextView",
+    "text": "16:00",
+    "bounds": "864,1159,1059,1304",
+    "children": []
+  },
+  {
+    "index": 17,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_reminder_1",
+    "className": "TextView",
+    "text": "10 minutes before",
+    "bounds": "159,1348,1080,1493",
+    "children": []
+  },
+  {
+    "index": 18,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_reminder_2",
+    "className": "TextView",
+    "text": "Add another reminder",
+    "bounds": "159,1493,1080,1638",
+    "children": []
+  },
+  {
+    "index": 19,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_repetition",
+    "className": "TextView",
+    "text": "No repetition",
+    "bounds": "159,1682,1080,1807",
+    "children": []
+  },
+  {
+    "index": 20,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_type_holder",
+    "className": "RelativeLayout",
+    "text": "com.simplemobiletools.calendar.pro:id/event_type_holder",
+    "bounds": "148,1853,1080,1978",
+    "children": []
+  },
+  {
+    "index": 21,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_type",
+    "className": "TextView",
+    "text": "Regular event",
+    "bounds": "159,1853,1059,1978",
+    "children": []
+  },
+  {
+    "index": 22,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_color_holder",
+    "className": "RelativeLayout",
+    "text": "com.simplemobiletools.calendar.pro:id/event_color_holder",
+    "bounds": "148,2022,1080,2147",
+    "children": []
+  },
+  {
+    "index": 23,
+    "resourceId": "com.simplemobiletools.calendar.pro:id/event_color_text",
+    "className": "TextView",
+    "text": "Event color",
+    "bounds": "159,2022,928,2147",
+    "children": []
+  }
+]

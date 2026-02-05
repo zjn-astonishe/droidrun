@@ -1,0 +1,50 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,128,1080,2337",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "com.android.chrome:id/promo_container",
+    "className": "ScrollView",
+    "text": "com.android.chrome:id/promo_container",
+    "bounds": "78,766,1002,1489",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "com.android.chrome:id/header",
+    "className": "TextView",
+    "text": "Search with Sogou",
+    "bounds": "120,1234,611,1307",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "com.android.chrome:id/subheader",
+    "className": "TextView",
+    "text": "Chrome can use Sogou for search in China. You can change this in Settings.",
+    "bounds": "120,1344,960,1447",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "com.android.chrome:id/button_secondary",
+    "className": "Button",
+    "text": "Keep Google",
+    "bounds": "441,1531,708,1657",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "com.android.chrome:id/button_primary",
+    "className": "Button",
+    "text": "OK",
+    "bounds": "729,1531,960,1657",
+    "children": []
+  }
+]

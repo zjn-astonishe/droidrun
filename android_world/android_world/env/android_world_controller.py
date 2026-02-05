@@ -73,11 +73,17 @@ def get_a11y_tree(
   Raises:
     RuntimeError: If the a11y tree was not able to be retrieved.
   """
+  # print("DEBUG: get_a11y_tree called")
+  
   if not _has_wrapper(env, a11y_grpc_wrapper.A11yGrpcWrapper):
+    # print("DEBUG: No A11yGrpcWrapper found")
     raise ValueError(
         'Must use a11y_grpc_wrapper.A11yGrpcWrapper to get the a11y tree.'
     )
+  
+  # print("DEBUG: A11yGrpcWrapper found")
   env = cast(a11y_grpc_wrapper.A11yGrpcWrapper, env)
+  
   if adb_utils.retry(3)(adb_utils.check_airplane_mode)(env):
     logging.warning(
         'Airplane mode is on -- cannot retrieve a11y tree via gRPC. Turning'
@@ -90,14 +96,58 @@ def get_a11y_tree(
   forest: Optional[
       android_accessibility_forest_pb2.AndroidAccessibilityForest
   ] = None
-  for _ in range(max_retries):
+  
+  for attempt in range(max_retries):
+    # print(f"DEBUG: Attempt {attempt + 1}/{max_retries} to get a11y tree")
     try:
-      forest = env.accumulate_new_extras()['accessibility_tree'][-1]  # pytype:disable=attribute-error
-      return forest
-    except KeyError:
+      extras = env.accumulate_new_extras()
+      # print(f"DEBUG: Got extras: {list(extras.keys())}")
+      
+      if 'accessibility_tree' in extras:
+        accessibility_trees = extras['accessibility_tree']
+        # print(f"DEBUG: Found {len(accessibility_trees)} accessibility trees")
+        if len(accessibility_trees) > 0:
+          forest = accessibility_trees[-1]
+          # print(f"DEBUG: Using latest tree with {len(forest.windows)} windows")
+          
+          # 详细分析为什么forest为空
+          if len(forest.windows) == 0:
+            # print("DEBUG: *** FOREST IS EMPTY - ANALYZING REASONS ***")
+            # print(f"DEBUG: Forest object: {forest}")
+            
+            # 检查extras中的其他信息
+            # print(f"DEBUG: All extras keys: {list(extras.keys())}")
+            if 'full_event' in extras:
+              full_events = extras['full_event']
+              # print(f"DEBUG: Found {len(full_events)} full_events")
+              for i, event in enumerate(full_events[:2]):  # 只显示前2个
+                event_str = str(event)
+                if len(event_str) > 100:
+                  event_str = event_str[:100] + "..."
+                # print(f"DEBUG: Event {i}: {event_str}")
+            
+            # print("DEBUG: Possible causes: A11y forwarder app crash, permissions, or device state")
+          
+          return forest
+        else:
+          ...
+          # print("DEBUG: accessibility_tree list is empty")
+      else:
+        ...
+        # print("DEBUG: No 'accessibility_tree' key in extras")
+        
+    except KeyError as e:
+      # print(f"DEBUG: KeyError in attempt {attempt + 1}: {e}")
       logging.warning('Could not get a11y tree, retrying.')
-    time.sleep(sleep_duration)
+    except Exception as e:
+      # print(f"DEBUG: Unexpected exception in attempt {attempt + 1}: {e}")
+      ...
+      
+    if attempt < max_retries - 1:  # Don't sleep on the last attempt
+      # print(f"DEBUG: Sleeping {sleep_duration}s before retry")
+      time.sleep(sleep_duration)
 
+  # print("DEBUG: All attempts failed")
   if forest is None:
     raise RuntimeError('Could not get a11y tree.')
   return forest
@@ -163,7 +213,7 @@ class AndroidWorldController(base_wrapper.BaseWrapper):
       self,
       env: env_interface.AndroidEnvInterface,
       a11y_method: A11yMethod = A11yMethod.A11Y_FORWARDER_APP,
-      install_a11y_forwarding_app: bool = True,
+      install_a11y_forwarding_app: bool = False,
   ):
     self._original_env = env
     if a11y_method == A11yMethod.A11Y_FORWARDER_APP:
@@ -208,7 +258,14 @@ class AndroidWorldController(base_wrapper.BaseWrapper):
   def _get_a11y_forest(
       self,
   ) -> android_accessibility_forest_pb2.AndroidAccessibilityForest:
-    return get_a11y_tree(self._env)
+    # print("DEBUG: _get_a11y_forest called")
+    try:
+      forest = get_a11y_tree(self._env)
+      # print(f"DEBUG: get_a11y_tree returned forest with {len(forest.windows)} windows")
+      return forest
+    except Exception as e:
+      # print(f"DEBUG: Exception in _get_a11y_forest: {e}")
+      raise
 
   def get_a11y_forest(
       self,
@@ -227,10 +284,28 @@ class AndroidWorldController(base_wrapper.BaseWrapper):
   def get_ui_elements(self) -> list[representation_utils.UIElement]:
     """Returns the most recent UI elements from the device."""
     if self._a11y_method == A11yMethod.A11Y_FORWARDER_APP:
-      return representation_utils.forest_to_ui_elements(
-          self.get_a11y_forest(),
-          exclude_invisible_elements=True,
-      )
+      try:
+        forest = self.get_a11y_forest()
+        ui_elements = representation_utils.forest_to_ui_elements(
+            forest,
+            exclude_invisible_elements=True,
+        )
+        
+        # 如果A11y方法返回空结果，尝试备用方法
+        if len(ui_elements) == 0:
+          try:
+            xml_dump = adb_utils.uiautomator_dump(self._env)
+            ui_elements = representation_utils.xml_dump_to_ui_elements(xml_dump)
+          except Exception as e:
+            # Uiautomator备用方法失败，但这是可以接受的
+            # 系统会继续使用空的UI元素列表
+            logging.debug(f"Uiautomator fallback failed: {e}")
+        return ui_elements
+      except Exception as e:
+        # print(f"DEBUG: A11y method failed: {e}, falling back to uiautomator")
+        return representation_utils.xml_dump_to_ui_elements(
+            adb_utils.uiautomator_dump(self._env)
+        )
     elif self._a11y_method == A11yMethod.UIAUTOMATOR:
       return representation_utils.xml_dump_to_ui_elements(
           adb_utils.uiautomator_dump(self._env)
@@ -240,17 +315,37 @@ class AndroidWorldController(base_wrapper.BaseWrapper):
 
   def _process_timestep(self, timestep: dm_env.TimeStep) -> dm_env.TimeStep:
     """Adds a11y tree info to the observation."""
+    # print(f"DEBUG: AndroidWorldController._process_timestep called")
+    # print(f"DEBUG: a11y_method = {self._a11y_method}")
+    
     if self._a11y_method == A11yMethod.A11Y_FORWARDER_APP:
-      forest = self.get_a11y_forest()
-      ui_elements = representation_utils.forest_to_ui_elements(
-          forest,
-          exclude_invisible_elements=True,
-      )
+      # print("DEBUG: Using A11Y_FORWARDER_APP method")
+      try:
+        forest = self.get_a11y_forest()
+        # print(f"DEBUG: Got forest: {forest}")
+        # print(f"DEBUG: Forest type: {type(forest)}")
+        if forest:
+          # print(f"DEBUG: Forest has {len(forest.windows)} windows")
+          # for i, window in enumerate(forest.windows):
+            # print(f"DEBUG: Window {i} has {len(window.tree.nodes)} nodes")
+          ...
+        
+        # 使用get_ui_elements方法，它包含备用机制
+        ui_elements = self.get_ui_elements()
+        # print(f"DEBUG: get_ui_elements returned {len(ui_elements)} UI elements")
+      except Exception as e:
+        # print(f"DEBUG: Exception in A11Y_FORWARDER_APP: {e}")
+        forest = None
+        ui_elements = []
     else:
+      # print("DEBUG: Using alternative method")
       forest = None
       ui_elements = self.get_ui_elements()
+      # print(f"DEBUG: Got {len(ui_elements)} UI elements from alternative method")
+    
     timestep.observation[OBSERVATION_KEY_FOREST] = forest
     timestep.observation[OBSERVATION_KEY_UI_ELEMENTS] = ui_elements
+    # print(f"DEBUG: Final UI elements count: {len(ui_elements)}")
     return timestep
 
   def pull_file(

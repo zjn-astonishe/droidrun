@@ -1,0 +1,146 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "555,254,1070,1262",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "",
+    "className": "ListView",
+    "text": "android.widget.ListView",
+    "bounds": "555,254,1070,1262",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "555,254,1070,380",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "com.google.android.documentsui:id/title",
+    "className": "TextView",
+    "text": "Open with",
+    "bounds": "597,291,1028,342",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "555,380,1070,506",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "com.google.android.documentsui:id/title",
+    "className": "TextView",
+    "text": "Sort by...",
+    "bounds": "597,417,1028,468",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "555,506,1070,632",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "com.google.android.documentsui:id/title",
+    "className": "TextView",
+    "text": "Deselect all",
+    "bounds": "597,543,1028,594",
+    "children": []
+  },
+  {
+    "index": 9,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "555,632,1070,758",
+    "children": []
+  },
+  {
+    "index": 10,
+    "resourceId": "com.google.android.documentsui:id/title",
+    "className": "TextView",
+    "text": "Copy to…",
+    "bounds": "597,669,1028,720",
+    "children": []
+  },
+  {
+    "index": 11,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "555,758,1070,884",
+    "children": []
+  },
+  {
+    "index": 12,
+    "resourceId": "com.google.android.documentsui:id/title",
+    "className": "TextView",
+    "text": "Move to…",
+    "bounds": "597,795,1028,846",
+    "children": []
+  },
+  {
+    "index": 13,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "555,884,1070,1010",
+    "children": []
+  },
+  {
+    "index": 14,
+    "resourceId": "com.google.android.documentsui:id/title",
+    "className": "TextView",
+    "text": "Compress",
+    "bounds": "597,921,1028,972",
+    "children": []
+  },
+  {
+    "index": 15,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "555,1010,1070,1136",
+    "children": []
+  },
+  {
+    "index": 16,
+    "resourceId": "com.google.android.documentsui:id/title",
+    "className": "TextView",
+    "text": "Rename",
+    "bounds": "597,1047,1028,1098",
+    "children": []
+  },
+  {
+    "index": 17,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "555,1136,1070,1262",
+    "children": []
+  },
+  {
+    "index": 18,
+    "resourceId": "com.google.android.documentsui:id/title",
+    "className": "TextView",
+    "text": "Get info",
+    "bounds": "597,1173,1028,1224",
+    "children": []
+  }
+]

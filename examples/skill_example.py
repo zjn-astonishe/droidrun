@@ -4,7 +4,7 @@ extractor = SkillExtractor()
 
 # 从轨迹提取技能
 skill = extractor.extract_from_trajectory(
-    trajectory_path="output/trajectories/20260204_193903_18e1ab05",
+    trajectory_path="output/trajectories/20260205_131756_2d834068",
     skill_name="my_skill",
     description="My custom skill",
     auto_parameterize=True,  # 自动识别参数

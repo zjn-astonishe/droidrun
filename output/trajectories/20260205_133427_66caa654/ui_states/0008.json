@@ -1,0 +1,122 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/workspace",
+    "className": "ScrollView",
+    "text": "com.google.android.apps.nexuslauncher:id/workspace",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/date",
+    "className": "TextView",
+    "text": "Thu, Feb 5",
+    "bounds": "57,292,1023,354",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "Gmail",
+    "bounds": "309,1479,519,1751",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "Photos",
+    "bounds": "561,1479,771,1751",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "YouTube",
+    "bounds": "813,1479,1023,1751",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "",
+    "className": "View",
+    "text": "Home",
+    "bounds": "0,128,1080,2337",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "Phone",
+    "bounds": "76,1873,249,2068",
+    "children": []
+  },
+  {
+    "index": 9,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "Messages",
+    "bounds": "328,1873,501,2068",
+    "children": []
+  },
+  {
+    "index": 10,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "Chrome",
+    "bounds": "580,1873,753,2068",
+    "children": []
+  },
+  {
+    "index": 11,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "Droidrun Portal",
+    "bounds": "832,1873,1004,2068",
+    "children": []
+  },
+  {
+    "index": 12,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/search_container_hotseat",
+    "className": "FrameLayout",
+    "text": "Search",
+    "bounds": "75,2125,1004,2290",
+    "children": []
+  },
+  {
+    "index": 13,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/g_icon",
+    "className": "ImageView",
+    "text": "Google app",
+    "bounds": "86,2144,212,2270",
+    "children": []
+  },
+  {
+    "index": 14,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/mic_icon",
+    "className": "ImageView",
+    "text": "Voice search",
+    "bounds": "741,2125,867,2290",
+    "children": []
+  },
+  {
+    "index": 15,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/lens_icon",
+    "className": "ImageButton",
+    "text": "Google Lens",
+    "bounds": "867,2125,993,2290",
+    "children": []
+  }
+]

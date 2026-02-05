@@ -59,6 +59,8 @@ async def resolve_tools_instance(
     tools_config_fallback: "ToolsConfig | None" = None,
     credential_manager=None,
     vision_enabled: bool = True,
+    after_sleep_action: float = 1.0,
+    wait_for_stable_ui: float = 2.5,
 ) -> tuple["Tools", "ToolsConfig"]:
     """
     Resolve Tools instance and ToolsConfig from various input types.
@@ -74,6 +76,8 @@ async def resolve_tools_instance(
         tools_config_fallback: Fallback ToolsConfig when tools is a Tools instance or None
         credential_manager: Optional credential manager to attach to Tools
         vision_enabled: Whether vision is enabled (default: True)
+        after_sleep_action: Sleep duration after UI actions (default: 1.0)
+        wait_for_stable_ui: Wait duration before getting state (default: 0.3)
 
     Returns:
         Tuple of (tools_instance, tools_config):
@@ -113,5 +117,9 @@ async def resolve_tools_instance(
     # Attach credential manager if provided
     if credential_manager:
         tools_instance.credential_manager = credential_manager
+
+    # Set sleep durations for UI stability
+    tools_instance.after_sleep_action = after_sleep_action
+    tools_instance.wait_for_stable_ui = wait_for_stable_ui
 
     return tools_instance, tools_cfg

@@ -1,0 +1,378 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_root",
+    "className": "ViewGroup",
+    "text": "com.google.android.googlequicksearchbox:id/googleapp_root",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_suggestions_fragment",
+    "className": "ViewGroup",
+    "text": "com.google.android.googlequicksearchbox:id/googleapp_suggestions_fragment",
+    "bounds": "0,0,1080,2337",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_superg",
+    "className": "ImageView",
+    "text": "Go to Discover",
+    "bounds": "21,139,168,265",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_search_box",
+    "className": "EditText",
+    "text": "File Manager",
+    "bounds": "189,139,901,264",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_search_box_clear_button",
+    "className": "ImageView",
+    "text": "Clear",
+    "bounds": "922,139,1048,265",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_suggestions",
+    "className": "RecyclerView",
+    "text": "Predictions",
+    "bounds": "0,278,1080,2337",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "Search file manager.",
+    "bounds": "21,278,1059,415",
+    "children": []
+  },
+  {
+    "index": 9,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "className": "ViewGroup",
+    "text": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "bounds": "21,278,1059,415",
+    "children": []
+  },
+  {
+    "index": 10,
+    "resourceId": "android:id/text1",
+    "className": "TextView",
+    "text": "file manager",
+    "bounds": "189,318,420,375",
+    "children": []
+  },
+  {
+    "index": 11,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_primary_action_icon",
+    "className": "ImageView",
+    "text": "Show predictions for file manager",
+    "bounds": "922,278,1048,415",
+    "children": []
+  },
+  {
+    "index": 12,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "Search file manager app.",
+    "bounds": "21,415,1059,552",
+    "children": []
+  },
+  {
+    "index": 13,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "className": "ViewGroup",
+    "text": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "bounds": "21,415,1059,552",
+    "children": []
+  },
+  {
+    "index": 14,
+    "resourceId": "android:id/text1",
+    "className": "TextView",
+    "text": "file manager app",
+    "bounds": "189,455,501,512",
+    "children": []
+  },
+  {
+    "index": 15,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_primary_action_icon",
+    "className": "ImageView",
+    "text": "Show predictions for file manager app",
+    "bounds": "922,415,1048,552",
+    "children": []
+  },
+  {
+    "index": 16,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "Search file manager android.",
+    "bounds": "21,552,1059,689",
+    "children": []
+  },
+  {
+    "index": 17,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "className": "ViewGroup",
+    "text": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "bounds": "21,552,1059,689",
+    "children": []
+  },
+  {
+    "index": 18,
+    "resourceId": "android:id/text1",
+    "className": "TextView",
+    "text": "file manager android",
+    "bounds": "189,592,572,649",
+    "children": []
+  },
+  {
+    "index": 19,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_primary_action_icon",
+    "className": "ImageView",
+    "text": "Show predictions for file manager android",
+    "bounds": "922,552,1048,689",
+    "children": []
+  },
+  {
+    "index": 20,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "Search file manager app android.",
+    "bounds": "21,689,1059,826",
+    "children": []
+  },
+  {
+    "index": 21,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "className": "ViewGroup",
+    "text": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "bounds": "21,689,1059,826",
+    "children": []
+  },
+  {
+    "index": 22,
+    "resourceId": "android:id/text1",
+    "className": "TextView",
+    "text": "file manager app android",
+    "bounds": "189,729,653,786",
+    "children": []
+  },
+  {
+    "index": 23,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_primary_action_icon",
+    "className": "ImageView",
+    "text": "Show predictions for file manager app android",
+    "bounds": "922,689,1048,826",
+    "children": []
+  },
+  {
+    "index": 24,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "Search file manager apk.",
+    "bounds": "21,826,1059,963",
+    "children": []
+  },
+  {
+    "index": 25,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "className": "ViewGroup",
+    "text": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "bounds": "21,826,1059,963",
+    "children": []
+  },
+  {
+    "index": 26,
+    "resourceId": "android:id/text1",
+    "className": "TextView",
+    "text": "file manager apk",
+    "bounds": "189,866,498,923",
+    "children": []
+  },
+  {
+    "index": 27,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_primary_action_icon",
+    "className": "ImageView",
+    "text": "Show predictions for file manager apk",
+    "bounds": "922,826,1048,963",
+    "children": []
+  },
+  {
+    "index": 28,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "Search file manager iphone.",
+    "bounds": "21,963,1059,1100",
+    "children": []
+  },
+  {
+    "index": 29,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "className": "ViewGroup",
+    "text": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "bounds": "21,963,1059,1100",
+    "children": []
+  },
+  {
+    "index": 30,
+    "resourceId": "android:id/text1",
+    "className": "TextView",
+    "text": "file manager iphone",
+    "bounds": "189,1003,556,1060",
+    "children": []
+  },
+  {
+    "index": 31,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_primary_action_icon",
+    "className": "ImageView",
+    "text": "Show predictions for file manager iphone",
+    "bounds": "922,963,1048,1100",
+    "children": []
+  },
+  {
+    "index": 32,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "Search file manager linux.",
+    "bounds": "21,1100,1059,1237",
+    "children": []
+  },
+  {
+    "index": 33,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "className": "ViewGroup",
+    "text": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "bounds": "21,1100,1059,1237",
+    "children": []
+  },
+  {
+    "index": 34,
+    "resourceId": "android:id/text1",
+    "className": "TextView",
+    "text": "file manager linux",
+    "bounds": "189,1140,517,1197",
+    "children": []
+  },
+  {
+    "index": 35,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_primary_action_icon",
+    "className": "ImageView",
+    "text": "Show predictions for file manager linux",
+    "bounds": "922,1100,1048,1237",
+    "children": []
+  },
+  {
+    "index": 36,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "Search file manager windows.",
+    "bounds": "21,1237,1059,1374",
+    "children": []
+  },
+  {
+    "index": 37,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "className": "ViewGroup",
+    "text": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "bounds": "21,1237,1059,1374",
+    "children": []
+  },
+  {
+    "index": 38,
+    "resourceId": "android:id/text1",
+    "className": "TextView",
+    "text": "file manager windows",
+    "bounds": "189,1277,597,1334",
+    "children": []
+  },
+  {
+    "index": 39,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_primary_action_icon",
+    "className": "ImageView",
+    "text": "Show predictions for file manager windows",
+    "bounds": "922,1237,1048,1374",
+    "children": []
+  },
+  {
+    "index": 40,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "Search file manager plus apk.",
+    "bounds": "21,1374,1059,1511",
+    "children": []
+  },
+  {
+    "index": 41,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "className": "ViewGroup",
+    "text": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "bounds": "21,1374,1059,1511",
+    "children": []
+  },
+  {
+    "index": 42,
+    "resourceId": "android:id/text1",
+    "className": "TextView",
+    "text": "file manager plus apk",
+    "bounds": "189,1414,587,1471",
+    "children": []
+  },
+  {
+    "index": 43,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_primary_action_icon",
+    "className": "ImageView",
+    "text": "Show predictions for file manager plus apk",
+    "bounds": "922,1374,1048,1511",
+    "children": []
+  },
+  {
+    "index": 44,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "Search file manager champ.",
+    "bounds": "21,1511,1059,1648",
+    "children": []
+  },
+  {
+    "index": 45,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "className": "ViewGroup",
+    "text": "com.google.android.googlequicksearchbox:id/googleapp_core_suggestion",
+    "bounds": "21,1511,1059,1648",
+    "children": []
+  },
+  {
+    "index": 46,
+    "resourceId": "android:id/text1",
+    "className": "TextView",
+    "text": "file manager champ",
+    "bounds": "189,1551,559,1608",
+    "children": []
+  },
+  {
+    "index": 47,
+    "resourceId": "com.google.android.googlequicksearchbox:id/googleapp_primary_action_icon",
+    "className": "ImageView",
+    "text": "Show predictions for file manager champ",
+    "bounds": "922,1511,1048,1648",
+    "children": []
+  }
+]

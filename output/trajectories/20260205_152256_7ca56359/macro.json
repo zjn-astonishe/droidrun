@@ -1,0 +1,167 @@
+{
+  "version": "1.0",
+  "description": "In Simple Calendar Pro, create a recurring calendar event titled 'Call with HR' starting on 2023-10-23 at 15h. The event recurs daily, forever, and lasts for 15 minutes each occurrence. The event description should be 'We will explore client feedback.'.",
+  "timestamp": "20260205_153046",
+  "total_actions": 17,
+  "actions": [
+    {
+      "type": "StartAppEvent",
+      "action_type": "start_app",
+      "description": "Start app com.simplemobiletools.calendar.pro",
+      "package": "com.simplemobiletools.calendar.pro",
+      "activity": ".activities.SplashActivity.Orange"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 36: 'com.simplemobiletools.calendar.pro:id/month_view_background' (View) at coordinates (231, 1577)",
+      "x": 231,
+      "y": 1577,
+      "element_index": 36,
+      "element_text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+      "element_bounds": "154,1425,308,1729"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 65: 'New Event' (ImageButton) at coordinates (964, 2221)",
+      "x": 964,
+      "y": 2221,
+      "element_index": 65,
+      "element_text": "New Event",
+      "element_bounds": "891,2148,1038,2295"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 68: 'Event' (TextView) at coordinates (812, 2221)",
+      "x": 812,
+      "y": 2221,
+      "element_index": 68,
+      "element_text": "Event",
+      "element_bounds": "733,2179,891,2264"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 7: 'Title' (EditText) at coordinates (540, 396)",
+      "x": 540,
+      "y": 396,
+      "element_index": 7,
+      "element_text": "Title",
+      "element_bounds": "42,338,1038,454"
+    },
+    {
+      "type": "InputTextActionEvent",
+      "action_type": "input_text",
+      "description": "Input text: 'Call with HR' (clear=True)",
+      "text": "Call with HR"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 14: '16:00' (TextView) at coordinates (961, 1086)",
+      "x": 961,
+      "y": 1086,
+      "element_index": 14,
+      "element_text": "16:00",
+      "element_bounds": "864,1014,1059,1159"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 20: '15' (TextView) at coordinates (714, 1355)",
+      "x": 714,
+      "y": 1355,
+      "element_index": 20,
+      "element_text": "15",
+      "element_bounds": "651,1292,777,1418"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 4: '00' (View) at coordinates (698, 818)",
+      "x": 698,
+      "y": 818,
+      "element_index": 4,
+      "element_text": "00",
+      "element_bounds": "572,713,824,923"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 20: 'OK' (Button) at coordinates (834, 1821)",
+      "x": 834,
+      "y": 1821,
+      "element_index": 20,
+      "element_text": "OK",
+      "element_bounds": "750,1758,918,1884"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 16: '15:00' (TextView) at coordinates (961, 1231)",
+      "x": 961,
+      "y": 1231,
+      "element_index": 16,
+      "element_text": "15:00",
+      "element_bounds": "864,1159,1059,1304"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 20: '15' (TextView) at coordinates (714, 1355)",
+      "x": 714,
+      "y": 1355,
+      "element_index": 20,
+      "element_text": "15",
+      "element_bounds": "651,1292,777,1418"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 32: 'OK' (Button) at coordinates (834, 1821)",
+      "x": 834,
+      "y": 1821,
+      "element_index": 32,
+      "element_text": "OK",
+      "element_bounds": "750,1758,918,1884"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 19: 'No repetition' (TextView) at coordinates (619, 1744)",
+      "x": 619,
+      "y": 1744,
+      "element_index": 19,
+      "element_text": "No repetition",
+      "element_bounds": "159,1682,1080,1807"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 5: 'Daily' (RadioButton) at coordinates (540, 1058)",
+      "x": 540,
+      "y": 1058,
+      "element_index": 5,
+      "element_text": "Daily",
+      "element_bounds": "133,1000,947,1116"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 10: 'Description' (EditText) at coordinates (540, 712)",
+      "x": 540,
+      "y": 712,
+      "element_index": 10,
+      "element_text": "Description",
+      "element_bounds": "42,654,1038,770"
+    },
+    {
+      "type": "InputTextActionEvent",
+      "action_type": "input_text",
+      "description": "Input text: 'We will explore client feedback.' (clear=False)",
+      "text": "We will explore client feedback."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "version": "1.0",
+  "description": "In Simple Calendar Pro, delete all the calendar events on 2023-10-24",
+  "timestamp": "20260205_150924",
+  "total_actions": 7,
+  "actions": [
+    {
+      "type": "StartAppEvent",
+      "action_type": "start_app",
+      "description": "Start app com.simplemobiletools.calendar.pro",
+      "package": "com.simplemobiletools.calendar.pro",
+      "activity": ".activities.SplashActivity.Orange"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 37: 'com.simplemobiletools.calendar.pro:id/month_view_background' (View) at coordinates (386, 1577)",
+      "x": 386,
+      "y": 1577,
+      "element_index": 37,
+      "element_text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+      "element_bounds": "309,1425,463,1729"
+    },
+    {
+      "type": "SwipeActionEvent",
+      "action_type": "swipe",
+      "description": "Swipe from (571, 493) to (571, 493) in 1000 milliseconds",
+      "start_x": 571,
+      "start_y": 493,
+      "end_x": 571,
+      "end_y": 493,
+      "duration_ms": 1000
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 66: 'Appointment for Budget Planning' (TextView) at coordinates (571, 691)",
+      "x": 571,
+      "y": 691,
+      "element_index": 66,
+      "element_text": "Appointment for Budget Planning",
+      "element_bounds": "105,657,1038,726"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 70: 'Meeting with Marketing' (TextView) at coordinates (571, 889)",
+      "x": 571,
+      "y": 889,
+      "element_index": 70,
+      "element_text": "Meeting with Marketing",
+      "element_bounds": "105,855,1038,924"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 77: 'Delete' (Button) at coordinates (1016, 212)",
+      "x": 1016,
+      "y": 212,
+      "element_index": 77,
+      "element_text": "Delete",
+      "element_bounds": "953,149,1080,275"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 5: 'Yes' (Button) at coordinates (842, 1317)",
+      "x": 842,
+      "y": 1317,
+      "element_index": 5,
+      "element_text": "Yes",
+      "element_bounds": "758,1254,926,1380"
+    }
+  ]
+}

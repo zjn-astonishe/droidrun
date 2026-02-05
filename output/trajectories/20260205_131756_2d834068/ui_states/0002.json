@@ -1,0 +1,210 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/search_results_list_view",
+    "className": "RecyclerView",
+    "text": "com.google.android.apps.nexuslauncher:id/search_results_list_view",
+    "bounds": "0,233,1080,2400",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "Contacts",
+    "bounds": "57,328,298,611",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "57,653,1023,800",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/title",
+    "className": "TextView",
+    "text": "Contacts0",
+    "bounds": "225,698,429,755",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "57,800,1023,947",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/title",
+    "className": "TextView",
+    "text": "Contacts1",
+    "bounds": "225,845,429,902",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "57,947,1023,1094",
+    "children": []
+  },
+  {
+    "index": 9,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/title",
+    "className": "TextView",
+    "text": "Contacts2",
+    "bounds": "225,992,429,1049",
+    "children": []
+  },
+  {
+    "index": 10,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "57,1094,1023,1241",
+    "children": []
+  },
+  {
+    "index": 11,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/title",
+    "className": "TextView",
+    "text": "Contacts3",
+    "bounds": "225,1139,429,1196",
+    "children": []
+  },
+  {
+    "index": 12,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "57,1241,1023,1388",
+    "children": []
+  },
+  {
+    "index": 13,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/title",
+    "className": "TextView",
+    "text": "Contacts4",
+    "bounds": "225,1286,429,1343",
+    "children": []
+  },
+  {
+    "index": 14,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "57,1388,1023,1535",
+    "children": []
+  },
+  {
+    "index": 15,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/title",
+    "className": "TextView",
+    "text": "Contacts5",
+    "bounds": "225,1433,429,1490",
+    "children": []
+  },
+  {
+    "index": 16,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "57,1535,1023,1682",
+    "children": []
+  },
+  {
+    "index": 17,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/title",
+    "className": "TextView",
+    "text": "Contacts6",
+    "bounds": "225,1580,429,1637",
+    "children": []
+  },
+  {
+    "index": 18,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "57,1682,1023,1829",
+    "children": []
+  },
+  {
+    "index": 19,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/title",
+    "className": "TextView",
+    "text": "Contacts7",
+    "bounds": "225,1727,429,1784",
+    "children": []
+  },
+  {
+    "index": 20,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "57,1829,1023,1976",
+    "children": []
+  },
+  {
+    "index": 21,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/title",
+    "className": "TextView",
+    "text": "Contacts8",
+    "bounds": "225,1874,429,1931",
+    "children": []
+  },
+  {
+    "index": 22,
+    "resourceId": "",
+    "className": "LinearLayout",
+    "text": "android.widget.LinearLayout",
+    "bounds": "57,1976,1023,2123",
+    "children": []
+  },
+  {
+    "index": 23,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/title",
+    "className": "TextView",
+    "text": "Contacts9",
+    "bounds": "225,2021,429,2078",
+    "children": []
+  },
+  {
+    "index": 24,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/g_icon",
+    "className": "ImageView",
+    "text": "Google app",
+    "bounds": "67,165,193,291",
+    "children": []
+  },
+  {
+    "index": 25,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/input",
+    "className": "EditText",
+    "text": "Contacts",
+    "bounds": "214,156,886,301",
+    "children": []
+  },
+  {
+    "index": 26,
+    "resourceId": "com.google.android.apps.nexuslauncher:id/clear_btn",
+    "className": "ImageButton",
+    "text": "Clear search box",
+    "bounds": "886,160,1023,297",
+    "children": []
+  }
+]

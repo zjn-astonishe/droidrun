@@ -39,6 +39,7 @@ from android_world.task_evals.single import simple_gallery_pro
 from android_world.task_evals.single import sms
 from android_world.task_evals.single import system
 from android_world.task_evals.single import vlc
+from android_world.task_evals.single import phone
 from android_world.task_evals.single.calendar import calendar
 
 
@@ -109,56 +110,57 @@ class TaskRegistry:
 
   _TASKS = (
       # keep-sorted start
-      audio_recorder.AudioRecorderRecordAudio,
-      audio_recorder.AudioRecorderRecordAudioWithFileName,
-      # browser.BrowserDraw,
-      browser.BrowserMaze,
-      browser.BrowserMultiply,
-      calendar.SimpleCalendarAddOneEvent,
-      calendar.SimpleCalendarAddOneEventInTwoWeeks,
-      calendar.SimpleCalendarAddOneEventRelativeDay,
-      calendar.SimpleCalendarAddOneEventTomorrow,
-      calendar.SimpleCalendarAddRepeatingEvent,
-      calendar.SimpleCalendarDeleteEvents,
-      calendar.SimpleCalendarDeleteEventsOnRelativeDay,
-      calendar.SimpleCalendarDeleteOneEvent,
-      camera.CameraTakePhoto,
-      camera.CameraTakeVideo,
-      clock.ClockStopWatchPausedVerify,
-      clock.ClockStopWatchRunning,
-      clock.ClockTimerEntry,
-      contacts.ContactsAddContact,
-      contacts.ContactsNewContactDraft,
-      expense.ExpenseAddMultiple,
+      audio_recorder.AudioRecorderRecordAudio,  #Done 1
+      audio_recorder.AudioRecorderRecordAudioWithFileName,  #Done 1
+      browser.BrowserDraw,  # TODO 3 not fit
+      browser.BrowserMaze,  # Done genmini-2.5-pro
+      browser.BrowserMultiply,  # TODO 1 not fit
+      calendar.SimpleCalendarAddOneEvent, #Done 1
+      calendar.SimpleCalendarAddOneEventInTwoWeeks, #Done 1
+      calendar.SimpleCalendarAddOneEventRelativeDay,  #Done 1
+      calendar.SimpleCalendarAddOneEventTomorrow, #Done 1
+      calendar.SimpleCalendarAddRepeatingEvent,   #Done 1
+      calendar.SimpleCalendarDeleteEvents,  # Done But Can't Skill 1
+      calendar.SimpleCalendarDeleteEventsOnRelativeDay, # Done But Can't Skill 1
+      calendar.SimpleCalendarDeleteOneEvent,  # Done But Can't Skill 1
+      camera.CameraTakePhoto, # Done 1
+      camera.CameraTakeVideo, # Done 1
+      clock.ClockStopWatchPausedVerify, # Done 1
+      clock.ClockStopWatchRunning, # Done 1
+      clock.ClockTimerEntry,  # Done 1
+      contacts.ContactsAddContact, #Done 1
+      contacts.ContactsNewContactDraft, #Done 1
+      expense.ExpenseAddSingle, #Done 1
+      expense.ExpenseAddMultiple, #Done 1
+      expense.ExpenseDeleteSingle, #Done 1
+      expense.ExpenseDeleteDuplicates,  # Done 1
+      expense.ExpenseDeleteDuplicates2, # Done genmini-2.5-pro
+      expense.ExpenseDeleteMultiple,  # Done 1
+      expense.ExpenseDeleteMultiple2, # Done genmini-2.5-pro
       expense.ExpenseAddMultipleFromGallery,
       expense.ExpenseAddMultipleFromMarkor,
-      expense.ExpenseAddSingle,
-      expense.ExpenseDeleteDuplicates,
-      expense.ExpenseDeleteDuplicates2,
-      expense.ExpenseDeleteMultiple,
-      expense.ExpenseDeleteMultiple2,
-      expense.ExpenseDeleteSingle,
-      files.FilesDeleteFile,
-      files.FilesMoveFile,
+      files.FilesDeleteFile,  #Done 1
+      files.FilesMoveFile,  #Done genmini-2.5-pro
+      # Markor composite tasks.
       markor.MarkorAddNoteHeader,
       markor.MarkorChangeNoteContent,
       markor.MarkorCreateFolder,
       markor.MarkorCreateNote,
       markor.MarkorCreateNoteFromClipboard,
+      markor.MarkorDeleteNote,
       markor.MarkorDeleteAllNotes,
       markor.MarkorDeleteNewestNote,
-      markor.MarkorDeleteNote,
       markor.MarkorEditNote,
       markor.MarkorMergeNotes,
       markor.MarkorMoveNote,
       markor.MarkorTranscribeReceipt,
       markor.MarkorTranscribeVideo,
-      # Markor composite tasks.
       markor_sms.MarkorCreateNoteAndSms,
       # OsmAnd.
       osmand.OsmAndFavorite,
       osmand.OsmAndMarker,
       osmand.OsmAndTrack,
+      # Recipe
       recipe.RecipeAddMultipleRecipes,
       recipe.RecipeAddMultipleRecipesFromImage,
       recipe.RecipeAddMultipleRecipesFromMarkor,
@@ -172,35 +174,39 @@ class TaskRegistry:
       recipe.RecipeDeleteMultipleRecipesWithNoise,
       recipe.RecipeDeleteSingleRecipe,
       recipe.RecipeDeleteSingleWithRecipeWithNoise,
+      # Retro Music
       retro_music.RetroCreatePlaylist,
       retro_music.RetroPlayingQueue,
       retro_music.RetroPlaylistDuration,
       retro_music.RetroSavePlaylist,
+      # Simple Draw Pro
       simple_draw_pro.SimpleDrawProCreateDrawing,
+      # Simple Gallery Pro
       simple_gallery_pro.SaveCopyOfReceiptTaskEval,
+      # Simple Sms
       sms.SimpleSmsReply,
       sms.SimpleSmsReplyMostRecent,
       sms.SimpleSmsResend,
       sms.SimpleSmsSend,
       sms.SimpleSmsSendClipboardContent,
       sms.SimpleSmsSendReceivedAddress,
-      system.OpenAppTaskEval,
-      system.SystemBluetoothTurnOff,
-      system.SystemBluetoothTurnOffVerify,
-      system.SystemBluetoothTurnOn,
-      system.SystemBluetoothTurnOnVerify,
-      system.SystemBrightnessMax,
-      system.SystemBrightnessMaxVerify,
-      system.SystemBrightnessMin,
-      system.SystemBrightnessMinVerify,
+      # System
+      system.OpenAppTaskEval, # Done 1
+      system.SystemBluetoothTurnOff,  # Done 1
+      system.SystemBluetoothTurnOffVerify,  # Done 1
+      system.SystemBluetoothTurnOn, # Done 1
+      system.SystemBluetoothTurnOnVerify,  # Done 1
+      system.SystemBrightnessMax,  # Done 1
+      system.SystemBrightnessMaxVerify,  # Done 1
+      system.SystemBrightnessMin, # Done 1
+      system.SystemBrightnessMinVerify, # Done 1
       system.SystemCopyToClipboard,
-      system.SystemWifiTurnOff,
-      system.SystemWifiTurnOffVerify,
-      system.SystemWifiTurnOn,
-      system.SystemWifiTurnOnVerify,
-      system_composite.TurnOffWifiAndTurnOnBluetooth,
-      system_composite.TurnOnWifiAndOpenApp,
-      # keep-sorted end
+      system.SystemWifiTurnOff, # Done 1
+      system.SystemWifiTurnOffVerify, # Done 1
+      system.SystemWifiTurnOn, # Done 1
+      system.SystemWifiTurnOnVerify, # Done 1
+      system_composite.TurnOffWifiAndTurnOnBluetooth, # Done 1
+      system_composite.TurnOnWifiAndOpenApp, # Done 1
       # VLC media player tasks.
       vlc.VlcCreatePlaylist,
       vlc.VlcCreateTwoPlaylists,

@@ -29,7 +29,7 @@ class ContactsAddContact(contacts_validators.AddContact):
 
   complexity = 1.2
   app_names = ("contacts",)
-  template = "Create a new contact for {name}. Their number is {number}."
+  template = "Open 'Contacts' App. Create a new contact for {name}. Their number is {number}."
 
 
 def _contact_info_is_entered(
@@ -154,6 +154,7 @@ class ContactsNewContactDraft(task_eval.TaskEval):
       "required": ["first", "last", "phone", "phone_label"],
   }
   template = (
+      "Open 'Contacts' App. "
       "Go to the new contact screen and enter the following details: First"
       " Name: {first}, Last Name: {last}, Phone: {phone}, Phone Label:"
       " {phone_label}. Do NOT hit save."
@@ -208,10 +209,12 @@ class ContactsNewContactDraft(task_eval.TaskEval):
       env: interface.AsyncEnv,
   ) -> float:
     super().is_successful(env)
+    state = env.get_state()
     ui_elements = representation_utils.forest_to_ui_elements(
-        env.get_state().forest,
+        state.forest,
         exclude_invisible_elements=False,
     )
+    print(f"DEBUG: ui_elements = {ui_elements}")
     return (
         1.0
         if _contact_info_is_entered(

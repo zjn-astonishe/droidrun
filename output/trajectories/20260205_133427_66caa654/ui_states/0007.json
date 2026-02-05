@@ -1,0 +1,82 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "com.android.chrome:id/fre_pager",
+    "className": "ViewPager",
+    "text": "com.android.chrome:id/fre_pager",
+    "bounds": "0,128,1080,2337",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,128,1080,2337",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "com.android.chrome:id/signin_scroll_view",
+    "className": "ScrollView",
+    "text": "com.android.chrome:id/signin_scroll_view",
+    "bounds": "0,128,1080,2127",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "com.android.chrome:id/signin_title",
+    "className": "TextView",
+    "text": "Turn on sync?",
+    "bounds": "42,527,402,600",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "com.android.chrome:id/signin_sync_title",
+    "className": "TextView",
+    "text": "Sync your passwords, history & more on all devices",
+    "bounds": "42,642,1038,699",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "com.android.chrome:id/signin_sync_description",
+    "className": "TextView",
+    "text": "Google may use your history to personalize Search and other Google services",
+    "bounds": "42,699,1038,793",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "com.android.chrome:id/signin_details_description",
+    "className": "TextView",
+    "text": "You can always choose what to sync in settings.",
+    "bounds": "42,880,1038,931",
+    "children": []
+  },
+  {
+    "index": 9,
+    "resourceId": "com.android.chrome:id/negative_button",
+    "className": "Button",
+    "text": "No thanks",
+    "bounds": "42,2169,273,2295",
+    "children": []
+  },
+  {
+    "index": 10,
+    "resourceId": "com.android.chrome:id/positive_button",
+    "className": "Button",
+    "text": "Add account",
+    "bounds": "692,2169,1038,2295",
+    "children": []
+  }
+]

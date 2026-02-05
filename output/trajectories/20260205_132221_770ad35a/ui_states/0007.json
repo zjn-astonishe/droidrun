@@ -1,0 +1,122 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "com.dimowner.audiorecorder:id/btn_import",
+    "className": "ImageButton",
+    "text": "com.dimowner.audiorecorder:id/btn_import",
+    "bounds": "0,128,147,275",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "Audio Recorder",
+    "bounds": "231,160,854,245",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "com.dimowner.audiorecorder:id/btn_share",
+    "className": "ImageButton",
+    "text": "com.dimowner.audiorecorder:id/btn_share",
+    "bounds": "938,128,1080,270",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "com.dimowner.audiorecorder:id/record",
+    "className": "View",
+    "text": "com.dimowner.audiorecorder:id/record",
+    "bounds": "0,684,1080,1209",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "com.dimowner.audiorecorder:id/btn_play",
+    "className": "ImageButton",
+    "text": "com.dimowner.audiorecorder:id/btn_play",
+    "bounds": "456,1209,624,1377",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "com.dimowner.audiorecorder:id/txt_progress",
+    "className": "TextView",
+    "text": "00:00",
+    "bounds": "358,1667,722,1856",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "com.dimowner.audiorecorder:id/txt_name",
+    "className": "TextView",
+    "text": "Record-3",
+    "bounds": "403,1856,677,1934",
+    "children": []
+  },
+  {
+    "index": 9,
+    "resourceId": "com.dimowner.audiorecorder:id/txt_record_info",
+    "className": "TextView",
+    "text": "0.13 Mb, M4a, 44.1kHz",
+    "bounds": "353,1945,726,1996",
+    "children": []
+  },
+  {
+    "index": 10,
+    "resourceId": "com.dimowner.audiorecorder:id/txt_zero_time",
+    "className": "TextView",
+    "text": "00:00",
+    "bounds": "42,1944,148,2001",
+    "children": []
+  },
+  {
+    "index": 11,
+    "resourceId": "com.dimowner.audiorecorder:id/txt_duration",
+    "className": "TextView",
+    "text": "00:11",
+    "bounds": "932,1944,1038,2001",
+    "children": []
+  },
+  {
+    "index": 12,
+    "resourceId": "com.dimowner.audiorecorder:id/play_progress",
+    "className": "SeekBar",
+    "text": "com.dimowner.audiorecorder:id/play_progress",
+    "bounds": "0,2022,1080,2069",
+    "children": []
+  },
+  {
+    "index": 13,
+    "resourceId": "com.dimowner.audiorecorder:id/btn_settings",
+    "className": "ImageButton",
+    "text": "Settings",
+    "bounds": "0,2090,221,2311",
+    "children": []
+  },
+  {
+    "index": 14,
+    "resourceId": "com.dimowner.audiorecorder:id/btn_record",
+    "className": "Button",
+    "text": "RECORD",
+    "bounds": "437,2090,642,2295",
+    "children": []
+  },
+  {
+    "index": 15,
+    "resourceId": "com.dimowner.audiorecorder:id/btn_records_list",
+    "className": "ImageButton",
+    "text": "com.dimowner.audiorecorder:id/btn_records_list",
+    "bounds": "859,2090,1080,2311",
+    "children": []
+  }
+]

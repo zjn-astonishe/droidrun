@@ -1,0 +1,82 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "Audio Recorder",
+    "bounds": "84,160,996,245",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "com.dimowner.audiorecorder:id/txt_progress",
+    "className": "TextView",
+    "text": "00:10",
+    "bounds": "358,1667,722,1856",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "com.dimowner.audiorecorder:id/txt_name",
+    "className": "TextView",
+    "text": "Paused",
+    "bounds": "442,1856,637,1934",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "com.dimowner.audiorecorder:id/txt_record_info",
+    "className": "TextView",
+    "text": "0.11 Mb, M4a, 44.1kHz",
+    "bounds": "353,1945,726,1996",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "com.dimowner.audiorecorder:id/play_progress",
+    "className": "SeekBar",
+    "text": "com.dimowner.audiorecorder:id/play_progress",
+    "bounds": "0,2022,1080,2069",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "com.dimowner.audiorecorder:id/btn_settings",
+    "className": "ImageButton",
+    "text": "Settings",
+    "bounds": "0,2090,221,2311",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "com.dimowner.audiorecorder:id/btn_record",
+    "className": "Button",
+    "text": "RESUME",
+    "bounds": "314,2090,519,2295",
+    "children": []
+  },
+  {
+    "index": 9,
+    "resourceId": "com.dimowner.audiorecorder:id/btn_record_stop",
+    "className": "Button",
+    "text": "FINISH",
+    "bounds": "561,2090,766,2295",
+    "children": []
+  },
+  {
+    "index": 10,
+    "resourceId": "com.dimowner.audiorecorder:id/btn_records_list",
+    "className": "ImageButton",
+    "text": "com.dimowner.audiorecorder:id/btn_records_list",
+    "bounds": "859,2090,1080,2311",
+    "children": []
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "28,777,1052,1489",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "com.dimowner.audiorecorder:id/dialog_title",
+    "className": "TextView",
+    "text": "New name",
+    "bounds": "123,872,397,950",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "com.dimowner.audiorecorder:id/input_name",
+    "className": "EditText",
+    "text": "Record-3",
+    "bounds": "123,992,957,1110",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "com.dimowner.audiorecorder:id/check_box",
+    "className": "CheckBox",
+    "text": "Don't ask again",
+    "bounds": "123,1131,957,1215",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "com.dimowner.audiorecorder:id/dialog_negative_btn",
+    "className": "Button",
+    "text": "Cancel",
+    "bounds": "432,1247,663,1373",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "com.dimowner.audiorecorder:id/dialog_positive_btn",
+    "className": "Button",
+    "text": "Save",
+    "bounds": "705,1247,936,1373",
+    "children": []
+  }
+]

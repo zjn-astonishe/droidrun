@@ -1,0 +1,338 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "120,593,960,1872",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "android:id/date_picker_header_year",
+    "className": "TextView",
+    "text": "2023",
+    "bounds": "162,614,300,705",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "android:id/date_picker_header_date",
+    "className": "TextView",
+    "text": "Sun, Oct 15",
+    "bounds": "183,684,640,789",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "",
+    "className": "ScrollView",
+    "text": "android.widget.ScrollView",
+    "bounds": "120,836,960,1724",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "android:id/day_picker_view_pager",
+    "className": "ViewPager",
+    "text": "android:id/day_picker_view_pager",
+    "bounds": "120,836,960,1724",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "android:id/month_view",
+    "className": "View",
+    "text": "android:id/month_view",
+    "bounds": "120,836,960,1724",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "",
+    "className": "View",
+    "text": "1",
+    "bounds": "173,1094,277,1199",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "",
+    "className": "View",
+    "text": "2",
+    "bounds": "277,1094,381,1199",
+    "children": []
+  },
+  {
+    "index": 9,
+    "resourceId": "",
+    "className": "View",
+    "text": "3",
+    "bounds": "381,1094,485,1199",
+    "children": []
+  },
+  {
+    "index": 10,
+    "resourceId": "",
+    "className": "View",
+    "text": "4",
+    "bounds": "485,1094,589,1199",
+    "children": []
+  },
+  {
+    "index": 11,
+    "resourceId": "",
+    "className": "View",
+    "text": "5",
+    "bounds": "589,1094,693,1199",
+    "children": []
+  },
+  {
+    "index": 12,
+    "resourceId": "",
+    "className": "View",
+    "text": "6",
+    "bounds": "693,1094,797,1199",
+    "children": []
+  },
+  {
+    "index": 13,
+    "resourceId": "",
+    "className": "View",
+    "text": "7",
+    "bounds": "797,1094,901,1199",
+    "children": []
+  },
+  {
+    "index": 14,
+    "resourceId": "",
+    "className": "View",
+    "text": "8",
+    "bounds": "173,1199,277,1304",
+    "children": []
+  },
+  {
+    "index": 15,
+    "resourceId": "",
+    "className": "View",
+    "text": "9",
+    "bounds": "277,1199,381,1304",
+    "children": []
+  },
+  {
+    "index": 16,
+    "resourceId": "",
+    "className": "View",
+    "text": "10",
+    "bounds": "381,1199,485,1304",
+    "children": []
+  },
+  {
+    "index": 17,
+    "resourceId": "",
+    "className": "View",
+    "text": "11",
+    "bounds": "485,1199,589,1304",
+    "children": []
+  },
+  {
+    "index": 18,
+    "resourceId": "",
+    "className": "View",
+    "text": "12",
+    "bounds": "589,1199,693,1304",
+    "children": []
+  },
+  {
+    "index": 19,
+    "resourceId": "",
+    "className": "View",
+    "text": "13",
+    "bounds": "693,1199,797,1304",
+    "children": []
+  },
+  {
+    "index": 20,
+    "resourceId": "",
+    "className": "View",
+    "text": "14",
+    "bounds": "797,1199,901,1304",
+    "children": []
+  },
+  {
+    "index": 21,
+    "resourceId": "",
+    "className": "View",
+    "text": "15",
+    "bounds": "173,1304,277,1409",
+    "children": []
+  },
+  {
+    "index": 22,
+    "resourceId": "",
+    "className": "View",
+    "text": "16",
+    "bounds": "277,1304,381,1409",
+    "children": []
+  },
+  {
+    "index": 23,
+    "resourceId": "",
+    "className": "View",
+    "text": "17",
+    "bounds": "381,1304,485,1409",
+    "children": []
+  },
+  {
+    "index": 24,
+    "resourceId": "",
+    "className": "View",
+    "text": "18",
+    "bounds": "485,1304,589,1409",
+    "children": []
+  },
+  {
+    "index": 25,
+    "resourceId": "",
+    "className": "View",
+    "text": "19",
+    "bounds": "589,1304,693,1409",
+    "children": []
+  },
+  {
+    "index": 26,
+    "resourceId": "",
+    "className": "View",
+    "text": "20",
+    "bounds": "693,1304,797,1409",
+    "children": []
+  },
+  {
+    "index": 27,
+    "resourceId": "",
+    "className": "View",
+    "text": "21",
+    "bounds": "797,1304,901,1409",
+    "children": []
+  },
+  {
+    "index": 28,
+    "resourceId": "",
+    "className": "View",
+    "text": "22",
+    "bounds": "173,1409,277,1514",
+    "children": []
+  },
+  {
+    "index": 29,
+    "resourceId": "",
+    "className": "View",
+    "text": "23",
+    "bounds": "277,1409,381,1514",
+    "children": []
+  },
+  {
+    "index": 30,
+    "resourceId": "",
+    "className": "View",
+    "text": "24",
+    "bounds": "381,1409,485,1514",
+    "children": []
+  },
+  {
+    "index": 31,
+    "resourceId": "",
+    "className": "View",
+    "text": "25",
+    "bounds": "485,1409,589,1514",
+    "children": []
+  },
+  {
+    "index": 32,
+    "resourceId": "",
+    "className": "View",
+    "text": "26",
+    "bounds": "589,1409,693,1514",
+    "children": []
+  },
+  {
+    "index": 33,
+    "resourceId": "",
+    "className": "View",
+    "text": "27",
+    "bounds": "693,1409,797,1514",
+    "children": []
+  },
+  {
+    "index": 34,
+    "resourceId": "",
+    "className": "View",
+    "text": "28",
+    "bounds": "797,1409,901,1514",
+    "children": []
+  },
+  {
+    "index": 35,
+    "resourceId": "",
+    "className": "View",
+    "text": "29",
+    "bounds": "173,1514,277,1619",
+    "children": []
+  },
+  {
+    "index": 36,
+    "resourceId": "",
+    "className": "View",
+    "text": "30",
+    "bounds": "277,1514,381,1619",
+    "children": []
+  },
+  {
+    "index": 37,
+    "resourceId": "",
+    "className": "View",
+    "text": "31",
+    "bounds": "381,1514,485,1619",
+    "children": []
+  },
+  {
+    "index": 38,
+    "resourceId": "android:id/prev",
+    "className": "ImageButton",
+    "text": "Previous month",
+    "bounds": "162,862,288,988",
+    "children": []
+  },
+  {
+    "index": 39,
+    "resourceId": "android:id/next",
+    "className": "ImageButton",
+    "text": "Next month",
+    "bounds": "792,862,918,988",
+    "children": []
+  },
+  {
+    "index": 40,
+    "resourceId": "android:id/buttonPanel",
+    "className": "ScrollView",
+    "text": "android:id/buttonPanel",
+    "bounds": "120,1724,960,1872",
+    "children": []
+  },
+  {
+    "index": 41,
+    "resourceId": "android:id/button2",
+    "className": "Button",
+    "text": "Cancel",
+    "bounds": "560,1735,739,1861",
+    "children": []
+  },
+  {
+    "index": 42,
+    "resourceId": "android:id/button1",
+    "className": "Button",
+    "text": "OK",
+    "bounds": "760,1735,928,1861",
+    "children": []
+  }
+]

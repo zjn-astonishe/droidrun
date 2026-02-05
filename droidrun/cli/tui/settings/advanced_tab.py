@@ -148,7 +148,7 @@ class AdvancedTab(VerticalGroup):
         try:
             wait_stable = float(wait_stable_str)
         except (ValueError, TypeError):
-            wait_stable = 0.3
+            wait_stable = 2.5
 
         return {
             "use_tcp": self.query_one("#use-tcp", BoolToggle).value,

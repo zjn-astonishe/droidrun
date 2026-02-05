@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "description": "Record an audio clip using Audio Recorder app and save it.",
+  "timestamp": "20260205_132352",
+  "total_actions": 8,
+  "actions": [
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 12: 'Search' (FrameLayout) at coordinates (539, 2207)",
+      "x": 539,
+      "y": 2207,
+      "element_index": 12,
+      "element_text": "Search",
+      "element_bounds": "75,2125,1004,2290"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 28: 'Search apps, web and more' (EditText) at coordinates (618, 228)",
+      "x": 618,
+      "y": 228,
+      "element_index": 28,
+      "element_text": "Search apps, web and more",
+      "element_bounds": "214,156,1023,301"
+    },
+    {
+      "type": "InputTextActionEvent",
+      "action_type": "input_text",
+      "description": "Input text: 'Audio Recorder' (clear=True)",
+      "text": "Audio Recorder"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 3: 'Audio Recorder' (TextView) at coordinates (177, 469)",
+      "x": 177,
+      "y": 469,
+      "element_index": 3,
+      "element_text": "Audio Recorder",
+      "element_bounds": "57,328,298,611"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 8: 'RECORD' (Button) at coordinates (539, 2192)",
+      "x": 539,
+      "y": 2192,
+      "element_index": 8,
+      "element_text": "RECORD",
+      "element_bounds": "437,2090,642,2295"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 8: 'STOP' (Button) at coordinates (539, 2192)",
+      "x": 539,
+      "y": 2192,
+      "element_index": 8,
+      "element_text": "STOP",
+      "element_bounds": "437,2090,642,2295"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 9: 'FINISH' (Button) at coordinates (663, 2192)",
+      "x": 663,
+      "y": 2192,
+      "element_index": 9,
+      "element_text": "FINISH",
+      "element_bounds": "561,2090,766,2295"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 6: 'Save' (Button) at coordinates (820, 1310)",
+      "x": 820,
+      "y": 1310,
+      "element_index": 6,
+      "element_text": "Save",
+      "element_bounds": "705,1247,936,1373"
+    }
+  ]
+}

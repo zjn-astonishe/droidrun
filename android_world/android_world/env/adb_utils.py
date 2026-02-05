@@ -123,6 +123,7 @@ _PATTERN_TO_ACTIVITY = immutabledict.immutabledict({
         'com.google.android.documentsui/com.android.documentsui.files.FilesActivity'
     ),
     'markor': 'net.gsantner.markor/net.gsantner.markor.activity.MainActivity',
+    'Markor': 'net.gsantner.markor/net.gsantner.markor.activity.MainActivity',
     'clipper': 'ca.zgrs.clipper/ca.zgrs.clipper.Main',
     'messages': (
         'com.google.android.apps.messaging/com.google.android.apps.messaging.ui.ConversationListActivity'
@@ -549,8 +550,10 @@ def issue_generic_request(
     args: Collection[str] | str,
     env: env_interface.AndroidEnvInterface,
     timeout_sec: Optional[float] = _DEFAULT_TIMEOUT_SECS,
+    max_retries: int = 3,
+    retry_delay: float = 2.0,
 ) -> adb_pb2.AdbResponse:
-  """Issues a generic adb command.
+  """Issues a generic adb command with retry logic for handling failures.
 
   Example:
   ~~~~~~~
@@ -564,6 +567,8 @@ def issue_generic_request(
       string.
     env: The environment.
     timeout_sec: A timeout to use for this operation.
+    max_retries: Maximum number of retry attempts on failure.
+    retry_delay: Delay in seconds between retry attempts.
 
   Returns:
     The adb response received after issuing the request.
@@ -574,16 +579,55 @@ def issue_generic_request(
   else:
     args_str = ' '.join(args)
 
-  response = env.execute_adb_call(
-      adb_pb2.AdbRequest(
-          generic=adb_pb2.AdbRequest.GenericRequest(args=args),
-          timeout_sec=timeout_sec,
+  last_response = None
+  for attempt in range(max_retries + 1):
+    try:
+      response = env.execute_adb_call(
+          adb_pb2.AdbRequest(
+              generic=adb_pb2.AdbRequest.GenericRequest(args=args),
+              timeout_sec=timeout_sec,
+          )
       )
-  )
-  if response.status != adb_pb2.AdbResponse.Status.OK:
-    logging.error('Failed to issue generic adb request: %r', args_str)
+      last_response = response
+      
+      # Success case
+      if response.status == adb_pb2.AdbResponse.Status.OK:
+        return response
+        
+      # Check for exit code 137 (commonly indicates OOM or process killed)
+      if (hasattr(response, 'generic') and 
+          hasattr(response.generic, 'exit_code') and 
+          response.generic.exit_code == 137):
+        if attempt < max_retries:
+          logging.warning(
+              'ADB command killed with exit code 137 (attempt %d/%d): %s',
+              attempt + 1, max_retries + 1, args_str
+          )
+          logging.info('Waiting %.1fs before retry...', retry_delay)
+          time.sleep(retry_delay)
+          continue
+        else:
+          logging.error(
+              'Failed to execute ADB command after %d attempts (exit code 137): %s',
+              max_retries + 1, args_str
+          )
+          
+      # Other error cases
+      if response.status != adb_pb2.AdbResponse.Status.OK:
+        logging.error('Failed to issue generic adb request: %r', args_str)
+        
+      return response
+      
+    except Exception as e:
+      logging.error('Exception during ADB request (attempt %d/%d): %s', 
+                   attempt + 1, max_retries + 1, str(e))
+      if attempt < max_retries:
+        time.sleep(retry_delay)
+        continue
+      else:
+        raise
 
-  return response
+  return last_response
 
 
 def get_adb_activity(app_name: str) -> Optional[str]:
@@ -1770,11 +1814,80 @@ def set_root_if_needed(
 
 
 def uiautomator_dump(env, timeout_sec: Optional[float] = 30) -> str:
-  """Issues a uiautomator dump request and returns the UI hierarchy."""
-  dump_args = 'shell uiautomator dump /sdcard/window_dump.xml'
-  issue_generic_request(dump_args, env, timeout_sec=timeout_sec)
-
-  read_args = 'shell cat /sdcard/window_dump.xml'
-  response = issue_generic_request(read_args, env, timeout_sec=timeout_sec)
-
-  return response.generic.output.decode('utf-8')
+  """Issues a uiautomator dump request and returns the UI hierarchy with enhanced retry logic."""
+  dump_path = '/sdcard/window_dump.xml'
+  max_retries = 5
+  retry_delay = 2.0
+  
+  for attempt in range(max_retries + 1):
+    try:
+      # Clear any existing dump file first on retry attempts
+      if attempt > 0:
+        logging.info(f"UIAutomator dump attempt {attempt + 1}/{max_retries + 1}")
+        # Clean up any stale dump file
+        cleanup_response = issue_generic_request(
+            ['shell', 'rm', '-f', dump_path], 
+            env, 
+            timeout_sec=5
+        )
+        # Wait a bit for cleanup
+        time.sleep(1.0)
+      
+      # Execute uiautomator dump
+      dump_args = ['shell', 'uiautomator', 'dump', dump_path]
+      dump_response = issue_generic_request(
+          dump_args, 
+          env, 
+          timeout_sec=timeout_sec,
+          max_retries=1  # Don't double-retry at this level
+      )
+      
+      # Check if dump command succeeded
+      if dump_response.status == adb_pb2.AdbResponse.Status.OK:
+        # Verify the file was created and read it
+        read_args = ['shell', 'cat', dump_path]
+        read_response = issue_generic_request(
+            read_args, 
+            env, 
+            timeout_sec=timeout_sec,
+            max_retries=1  # Don't double-retry at this level
+        )
+        
+        if read_response.status == adb_pb2.AdbResponse.Status.OK:
+          xml_content = read_response.generic.output.decode('utf-8')
+          
+          # Validate that we got actual XML content
+          if xml_content.strip() and '<?xml' in xml_content:
+            if attempt > 0:
+              logging.info(f"UIAutomator dump succeeded on attempt {attempt + 1}")
+            return xml_content
+          else:
+            logging.warning(f"UIAutomator dump returned empty or invalid XML (attempt {attempt + 1})")
+        else:
+          logging.warning(f"Failed to read dump file (attempt {attempt + 1}): {read_response.error_message}")
+      else:
+        # Check for specific error conditions
+        error_msg = getattr(dump_response, 'error_message', 'Unknown error')
+        exit_code = getattr(dump_response.generic, 'exit_code', None) if hasattr(dump_response, 'generic') else None
+        
+        if exit_code == 137:
+          logging.warning(f"UIAutomator process killed (exit code 137) on attempt {attempt + 1}")
+        else:
+          logging.warning(f"UIAutomator dump failed (attempt {attempt + 1}): {error_msg}")
+      
+      # If we're not on the last attempt, wait before retrying
+      if attempt < max_retries:
+        logging.info(f"Waiting {retry_delay}s before retry...")
+        time.sleep(retry_delay)
+        # Increase delay for subsequent attempts
+        retry_delay = min(retry_delay * 1.5, 10.0)
+        
+    except Exception as e:
+      logging.error(f"Exception during UIAutomator dump (attempt {attempt + 1}): {str(e)}")
+      if attempt < max_retries:
+        time.sleep(retry_delay)
+        retry_delay = min(retry_delay * 1.5, 10.0)
+      else:
+        raise RuntimeError(f"UIAutomator dump failed after {max_retries + 1} attempts: {str(e)}")
+  
+  raise RuntimeError(f"UIAutomator dump failed after {max_retries + 1} attempts")

@@ -1,0 +1,55 @@
+{
+  "version": "1.0",
+  "description": "In Simple Calendar Pro, delete the calendar event on 2023-10-18 at 13h with the title 'Appointment for Campaign'",
+  "timestamp": "20260205_155009",
+  "total_actions": 5,
+  "actions": [
+    {
+      "type": "StartAppEvent",
+      "action_type": "start_app",
+      "description": "Start app com.simplemobiletools.calendar.pro",
+      "package": "com.simplemobiletools.calendar.pro",
+      "activity": ".activities.SplashActivity.Orange"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 31: 'com.simplemobiletools.calendar.pro:id/month_view_background' (View) at coordinates (540, 1272)",
+      "x": 540,
+      "y": 1272,
+      "element_index": 31,
+      "element_text": "com.simplemobiletools.calendar.pro:id/month_view_background",
+      "element_bounds": "463,1120,617,1424"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 66: 'Appointment for Campaign' (TextView) at coordinates (571, 691)",
+      "x": 571,
+      "y": 691,
+      "element_index": 66,
+      "element_text": "Appointment for Campaign",
+      "element_bounds": "105,657,1038,726"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 6: 'Delete' (Button) at coordinates (784, 211)",
+      "x": 784,
+      "y": 211,
+      "element_index": 6,
+      "element_text": "Delete",
+      "element_bounds": "721,148,848,274"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 5: 'Yes' (Button) at coordinates (842, 1317)",
+      "x": 842,
+      "y": 1317,
+      "element_index": 5,
+      "element_text": "Yes",
+      "element_bounds": "758,1254,926,1380"
+    }
+  ]
+}

@@ -539,6 +539,8 @@ class DroidAgent(Workflow):
                 tools_config_fallback=self.config.tools,
                 credential_manager=self.credential_manager,
                 vision_enabled=vision_enabled,
+                after_sleep_action=self.config.agent.after_sleep_action,
+                wait_for_stable_ui=self.config.agent.wait_for_stable_ui,
             )
 
             self.tools_instance = tools_instance

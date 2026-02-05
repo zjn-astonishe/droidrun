@@ -1,0 +1,55 @@
+{
+  "version": "1.0",
+  "description": "Take one video. You can change mode through 'mode list'",
+  "timestamp": "20260205_164247",
+  "total_actions": 5,
+  "actions": [
+    {
+      "type": "StartAppEvent",
+      "action_type": "start_app",
+      "description": "Start app com.android.camera2",
+      "package": "com.android.camera2",
+      "activity": "com.android.camera.CameraLauncher"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 6: 'MODE LIST' (Button) at coordinates (124, 191)",
+      "x": 124,
+      "y": 191,
+      "element_index": 6,
+      "element_text": "MODE LIST",
+      "element_bounds": "0,128,248,254"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 6: 'Video' (TextView) at coordinates (284, 1391)",
+      "x": 284,
+      "y": 1391,
+      "element_index": 6,
+      "element_text": "Video",
+      "element_bounds": "189,1318,379,1465"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 5: 'Shutter' (ImageView) at coordinates (540, 2211)",
+      "x": 540,
+      "y": 2211,
+      "element_index": 5,
+      "element_text": "Shutter",
+      "element_bounds": "0,2085,1080,2337"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 4: 'Shutter' (ImageView) at coordinates (540, 2211)",
+      "x": 540,
+      "y": 2211,
+      "element_index": 4,
+      "element_text": "Shutter",
+      "element_bounds": "0,2085,1080,2337"
+    }
+  ]
+}
