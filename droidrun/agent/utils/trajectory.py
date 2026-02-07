@@ -33,7 +33,8 @@ class Trajectory:
         self.ui_states: List[Dict[str, Any]] = []
         self.macro: List[Event] = []
         self.goal = goal or "DroidRun automation sequence"
-
+        if goal:
+            print(f"🎯 Trajectory Goal: {goal}")
         self.base_path = self._resolve_path(base_path)
         self.trajectory_folder = self._create_trajectory_folder()
 

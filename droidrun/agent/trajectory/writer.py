@@ -372,22 +372,25 @@ class TrajectoryWriter:
         if not macro_snapshot:
             return None
 
+        actions = []
+        for macro_event in macro_snapshot:
+            action_data = {
+                "type": macro_event.__class__.__name__,
+                **{
+                    k: make_serializable(v)
+                    for k, v in macro_event.__dict__.items()
+                    if not k.startswith("_")
+                },
+            }
+            
+            actions.append(action_data)
+
         macro_data = {
             "version": "1.0",
             "description": trajectory.goal,
             "timestamp": time.strftime("%Y%m%d_%H%M%S"),
             "total_actions": len(macro_snapshot),
-            "actions": [
-                {
-                    "type": macro_event.__class__.__name__,
-                    **{
-                        k: make_serializable(v)
-                        for k, v in macro_event.__dict__.items()
-                        if not k.startswith("_")
-                    },
-                }
-                for macro_event in macro_snapshot
-            ],
+            "actions": actions,
         }
 
         return MacroWriteJob(

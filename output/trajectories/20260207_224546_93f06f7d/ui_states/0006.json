@@ -1,0 +1,194 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "com.google.android.contacts:id/root",
+    "className": "ScrollView",
+    "text": "com.google.android.contacts:id/root",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "",
+    "className": "ImageButton",
+    "text": "Navigate up",
+    "bounds": "0,138,147,285",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "com.google.android.contacts:id/menu_insert_or_edit",
+    "className": "Button",
+    "text": "Edit contact",
+    "bounds": "700,148,827,274",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "com.google.android.contacts:id/menu_star",
+    "className": "Button",
+    "text": "Add to favorites",
+    "bounds": "827,148,954,274",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "",
+    "className": "ImageView",
+    "text": "More options",
+    "bounds": "954,148,1080,274",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "com.google.android.contacts:id/monogram_photo",
+    "className": "ImageView",
+    "text": "Contact photo",
+    "bounds": "409,335,670,596",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "com.google.android.contacts:id/name_container",
+    "className": "LinearLayout",
+    "text": "com.google.android.contacts:id/name_container",
+    "bounds": "0,688,1080,888",
+    "children": []
+  },
+  {
+    "index": 9,
+    "resourceId": "com.google.android.contacts:id/large_title_container",
+    "className": "FrameLayout",
+    "text": "com.google.android.contacts:id/large_title_container",
+    "bounds": "53,741,1027,835",
+    "children": []
+  },
+  {
+    "index": 10,
+    "resourceId": "com.google.android.contacts:id/large_title",
+    "className": "TextView",
+    "text": "Olivia Lopez",
+    "bounds": "53,741,1027,835",
+    "children": []
+  },
+  {
+    "index": 11,
+    "resourceId": "com.google.android.contacts:id/verbs_container",
+    "className": "RecyclerView",
+    "text": "com.google.android.contacts:id/verbs_container",
+    "bounds": "31,891,1050,1104",
+    "children": []
+  },
+  {
+    "index": 12,
+    "resourceId": "com.google.android.contacts:id/verb_call",
+    "className": "TextView",
+    "text": "Call",
+    "bounds": "68,891,383,1104",
+    "children": []
+  },
+  {
+    "index": 13,
+    "resourceId": "com.google.android.contacts:id/verb_text",
+    "className": "TextView",
+    "text": "Text",
+    "bounds": "383,891,698,1104",
+    "children": []
+  },
+  {
+    "index": 14,
+    "resourceId": "com.google.android.contacts:id/verb_video",
+    "className": "TextView",
+    "text": "Set up",
+    "bounds": "698,891,1013,1104",
+    "children": []
+  },
+  {
+    "index": 15,
+    "resourceId": "com.google.android.contacts:id/content_scroll_view",
+    "className": "ScrollView",
+    "text": "com.google.android.contacts:id/content_scroll_view",
+    "bounds": "0,1107,1080,2400",
+    "children": []
+  },
+  {
+    "index": 16,
+    "resourceId": "com.google.android.contacts:id/cards",
+    "className": "RecyclerView",
+    "text": "com.google.android.contacts:id/cards",
+    "bounds": "0,1107,1080,1803",
+    "children": []
+  },
+  {
+    "index": 17,
+    "resourceId": "com.google.android.contacts:id/contact_card",
+    "className": "CardView",
+    "text": "com.google.android.contacts:id/contact_card",
+    "bounds": "42,1170,1038,1505",
+    "children": []
+  },
+  {
+    "index": 18,
+    "resourceId": "com.google.android.contacts:id/title",
+    "className": "TextView",
+    "text": "Contact info",
+    "bounds": "84,1212,328,1272",
+    "children": []
+  },
+  {
+    "index": 19,
+    "resourceId": "",
+    "className": "RelativeLayout",
+    "text": "Call Mobile +11725757156",
+    "bounds": "42,1314,1038,1500",
+    "children": []
+  },
+  {
+    "index": 20,
+    "resourceId": "com.google.android.contacts:id/header",
+    "className": "TextView",
+    "text": "+11725757156",
+    "bounds": "189,1351,440,1411",
+    "children": []
+  },
+  {
+    "index": 21,
+    "resourceId": "com.google.android.contacts:id/sub_header",
+    "className": "TextView",
+    "text": "Mobile",
+    "bounds": "189,1411,302,1463",
+    "children": []
+  },
+  {
+    "index": 22,
+    "resourceId": "com.google.android.contacts:id/icon_alternate",
+    "className": "Button",
+    "text": "Text Mobile +11725757156",
+    "bounds": "901,1344,1027,1470",
+    "children": []
+  },
+  {
+    "index": 23,
+    "resourceId": "",
+    "className": "RelativeLayout",
+    "text": "android.widget.RelativeLayout",
+    "bounds": "42,1547,1038,1593",
+    "children": []
+  },
+  {
+    "index": 24,
+    "resourceId": "com.google.android.contacts:id/contact_create_date_text",
+    "className": "TextView",
+    "text": "Added Oct 15, 2023",
+    "bounds": "42,1547,1038,1593",
+    "children": []
+  }
+]

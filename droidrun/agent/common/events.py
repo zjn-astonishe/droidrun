@@ -12,6 +12,8 @@ class MacroEvent(Event):
 
     action_type: str
     description: str
+    ui_state_index: Optional[int] = None  # Index of the corresponding UI state
+    ui_state_path: str = ""  # Path to the UI state file (e.g., "ui_states/0003.json")
 
 
 class TapActionEvent(MacroEvent):

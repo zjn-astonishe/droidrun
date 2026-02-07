@@ -1,0 +1,186 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "android.widget.FrameLayout",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 2,
+    "resourceId": "com.google.android.contacts:id/contact_editor_fragment",
+    "className": "ViewGroup",
+    "text": "com.google.android.contacts:id/contact_editor_fragment",
+    "bounds": "0,0,1080,2400",
+    "children": []
+  },
+  {
+    "index": 3,
+    "resourceId": "",
+    "className": "ImageButton",
+    "text": "Cancel",
+    "bounds": "0,138,147,285",
+    "children": []
+  },
+  {
+    "index": 4,
+    "resourceId": "",
+    "className": "TextView",
+    "text": "Create contact",
+    "bounds": "157,175,551,248",
+    "children": []
+  },
+  {
+    "index": 5,
+    "resourceId": "com.google.android.contacts:id/toolbar_button",
+    "className": "Button",
+    "text": "Save",
+    "bounds": "723,148,954,274",
+    "children": []
+  },
+  {
+    "index": 6,
+    "resourceId": "",
+    "className": "ImageView",
+    "text": "More options",
+    "bounds": "954,148,1080,274",
+    "children": []
+  },
+  {
+    "index": 7,
+    "resourceId": "com.google.android.contacts:id/contact_editor_scroller",
+    "className": "ScrollView",
+    "text": "com.google.android.contacts:id/contact_editor_scroller",
+    "bounds": "0,296,1080,2139",
+    "children": []
+  },
+  {
+    "index": 8,
+    "resourceId": "com.google.android.contacts:id/photo_update_clickable",
+    "className": "RelativeLayout",
+    "text": "com.google.android.contacts:id/photo_update_clickable",
+    "bounds": "382,349,697,735",
+    "children": []
+  },
+  {
+    "index": 9,
+    "resourceId": "com.google.android.contacts:id/photo_icon",
+    "className": "ImageView",
+    "text": "Add contact photo",
+    "bounds": "397,364,682,649",
+    "children": []
+  },
+  {
+    "index": 10,
+    "resourceId": "com.google.android.contacts:id/text_label_photo_icon",
+    "className": "TextView",
+    "text": "Add photo",
+    "bounds": "449,664,630,735",
+    "children": []
+  },
+  {
+    "index": 11,
+    "resourceId": "",
+    "className": "EditText",
+    "text": "Olivia",
+    "bounds": "137,803,933,952",
+    "children": []
+  },
+  {
+    "index": 12,
+    "resourceId": "",
+    "className": "EditText",
+    "text": "Lopez",
+    "bounds": "137,988,933,1137",
+    "children": []
+  },
+  {
+    "index": 13,
+    "resourceId": "com.google.android.contacts:id/expansion_view_container",
+    "className": "FrameLayout",
+    "text": "com.google.android.contacts:id/expansion_view_container",
+    "bounds": "933,788,1080,935",
+    "children": []
+  },
+  {
+    "index": 14,
+    "resourceId": "com.google.android.contacts:id/expansion_view",
+    "className": "ImageView",
+    "text": "Show more name fields",
+    "bounds": "933,788,1080,935",
+    "children": []
+  },
+  {
+    "index": 15,
+    "resourceId": "",
+    "className": "EditText",
+    "text": "Company",
+    "bounds": "137,1194,933,1343",
+    "children": []
+  },
+  {
+    "index": 16,
+    "resourceId": "",
+    "className": "EditText",
+    "text": "+11725757156",
+    "bounds": "137,1400,933,1549",
+    "children": []
+  },
+  {
+    "index": 17,
+    "resourceId": "",
+    "className": "Spinner",
+    "text": "Mobile",
+    "bounds": "137,1585,586,1734",
+    "children": []
+  },
+  {
+    "index": 18,
+    "resourceId": "com.google.android.contacts:id/text_input_end_icon",
+    "className": "ImageButton",
+    "text": "Show dropdown menu",
+    "bounds": "460,1596,586,1722",
+    "children": []
+  },
+  {
+    "index": 19,
+    "resourceId": "com.google.android.contacts:id/delete_button_container",
+    "className": "FrameLayout",
+    "text": "Delete Mobile Phone",
+    "bounds": "933,1385,1080,1532",
+    "children": []
+  },
+  {
+    "index": 20,
+    "resourceId": "com.google.android.contacts:id/delete_button",
+    "className": "ImageView",
+    "text": "delete",
+    "bounds": "933,1385,1080,1532",
+    "children": []
+  },
+  {
+    "index": 21,
+    "resourceId": "",
+    "className": "EditText",
+    "text": "Phone",
+    "bounds": "137,1796,933,1945",
+    "children": []
+  },
+  {
+    "index": 22,
+    "resourceId": "",
+    "className": "Spinner",
+    "text": "Home",
+    "bounds": "137,1981,586,2130",
+    "children": []
+  },
+  {
+    "index": 23,
+    "resourceId": "com.google.android.contacts:id/text_input_end_icon",
+    "className": "ImageButton",
+    "text": "Show dropdown menu",
+    "bounds": "460,1992,586,2118",
+    "children": []
+  }
+]

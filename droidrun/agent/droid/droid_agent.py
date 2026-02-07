@@ -1077,6 +1077,11 @@ class DroidAgent(Workflow):
                 self.trajectory.screenshot_queue.append(ev.screenshot)
                 self.trajectory.screenshot_count += 1
             elif isinstance(ev, MacroEvent):
+                # 关联当前 UI State 的索引和路径
+                current_ui_state_index = len(self.trajectory.ui_states)
+                ev.ui_state_index = current_ui_state_index
+                # 构建 UI State 文件的相对路径
+                ev.ui_state_path = f"ui_states/{current_ui_state_index:04d}.json"
                 self.trajectory.macro.append(ev)
             elif isinstance(ev, RecordUIStateEvent):
                 self.trajectory.ui_states.append(ev.ui_state)

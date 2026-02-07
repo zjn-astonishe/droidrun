@@ -1,0 +1,101 @@
+{
+  "version": "1.0",
+  "description": "Open 'Contacts' App. Create a new contact for Olivia Lopez. Their number is +11725757156. (name: Olivia Lopez, phone: +11725757156)",
+  "timestamp": "20260207_224743",
+  "total_actions": 9,
+  "actions": [
+    {
+      "type": "StartAppEvent",
+      "action_type": "start_app",
+      "description": "Start app com.google.android.contacts",
+      "ui_state_index": 1,
+      "ui_state_path": "ui_states/0001.json",
+      "package": "com.google.android.contacts",
+      "activity": "com.android.contacts.activities.PeopleActivity"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 16: 'Create contact' (ImageButton) at coordinates (943, 2011)",
+      "ui_state_index": 2,
+      "ui_state_path": "ui_states/0002.json",
+      "x": 943,
+      "y": 2011,
+      "element_index": 16,
+      "element_text": "Create contact",
+      "element_bounds": "870,1938,1017,2085"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 11: 'First name' (EditText) at coordinates (535, 877)",
+      "ui_state_index": 3,
+      "ui_state_path": "ui_states/0003.json",
+      "x": 535,
+      "y": 877,
+      "element_index": 11,
+      "element_text": "First name",
+      "element_bounds": "137,803,933,952"
+    },
+    {
+      "type": "InputTextActionEvent",
+      "action_type": "input_text",
+      "description": "Input text: 'Olivia' (clear=False)",
+      "ui_state_index": 3,
+      "ui_state_path": "ui_states/0003.json",
+      "text": "Olivia"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 12: 'Last name' (EditText) at coordinates (535, 1062)",
+      "ui_state_index": 4,
+      "ui_state_path": "ui_states/0004.json",
+      "x": 535,
+      "y": 1062,
+      "element_index": 12,
+      "element_text": "Last name",
+      "element_bounds": "137,988,933,1137"
+    },
+    {
+      "type": "InputTextActionEvent",
+      "action_type": "input_text",
+      "description": "Input text: 'Lopez' (clear=False)",
+      "ui_state_index": 4,
+      "ui_state_path": "ui_states/0004.json",
+      "text": "Lopez"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 16: 'Phone' (EditText) at coordinates (535, 1474)",
+      "ui_state_index": 5,
+      "ui_state_path": "ui_states/0005.json",
+      "x": 535,
+      "y": 1474,
+      "element_index": 16,
+      "element_text": "Phone",
+      "element_bounds": "137,1400,933,1549"
+    },
+    {
+      "type": "InputTextActionEvent",
+      "action_type": "input_text",
+      "description": "Input text: '+11725757156' (clear=False)",
+      "ui_state_index": 5,
+      "ui_state_path": "ui_states/0005.json",
+      "text": "+11725757156"
+    },
+    {
+      "type": "TapActionEvent",
+      "action_type": "tap",
+      "description": "Tap element at index 5: 'Save' (Button) at coordinates (838, 211)",
+      "ui_state_index": 6,
+      "ui_state_path": "ui_states/0006.json",
+      "x": 838,
+      "y": 211,
+      "element_index": 5,
+      "element_text": "Save",
+      "element_bounds": "723,148,954,274"
+    }
+  ]
+}

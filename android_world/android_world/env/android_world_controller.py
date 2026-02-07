@@ -156,7 +156,13 @@ def get_a11y_tree(
 _TASK_PATH = file_utils.convert_to_posix_path(
     file_utils.get_local_tmp_directory(), 'default.textproto'
 )
-DEFAULT_ADB_PATH = '~/Android/Sdk/platform-tools/adb'
+
+# Define DEFAULT_ADB_PATH based on OS
+if os.name == 'nt':  # Windows
+    # DEFAULT_ADB_PATH = os.path.expanduser('~/AppData/Local/Android/Sdk/platform-tools/adb.exe')
+    DEFAULT_ADB_PATH = 'D:/Android/Sdk/platform-tools/adb.exe'
+else:  # Unix-like systems (macOS, Linux)
+    DEFAULT_ADB_PATH = '~/Android/Sdk/platform-tools/adb'
 
 
 # UI tree-specific keys that are added to observations:
